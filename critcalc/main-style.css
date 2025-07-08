@@ -1,0 +1,161 @@
+﻿html, body {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: diablo_font1;
+	src: url('/_res/Exocet1.ttf');
+}
+
+@font-face {
+	font-family: diablo_font2;
+	src: url('/_res/Exocet2.ttf');
+}
+
+body, form, input, div {
+	cursor: default;
+	font-family: Verdana;
+	color: #FACC2E;
+	background-color: #000000;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input {
+	border: 1px solid #999999;
+	background-color: #333333;
+	font-size: 1em;
+	width: 3em;
+	margin: 2px;
+	padding: 3px;
+	text-align: right;
+}
+
+div#main {
+	text-align: center;
+}
+
+table.center {
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+td {
+	text-align: center;
+}
+
+div#footer-special {
+	font-family: Verdana;
+	font-size: small;
+}
+
+div#footer {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	font-family: diablo_font1;
+	color: #B40404;
+}
+
+a {
+	color: #B40404;
+}
+
+th {
+	color: #F7E9B8;
+	text-align: center;
+}
+
+td.center {
+	text-align: center;
+}
+
+span.positive {
+	color: #04B404;
+}
+
+span.negative {
+	color: #B40404;
+}
+
+th#spacercolumn {
+	width: 7em;
+}
+
+td#tdcomment {
+	text-align: center;
+	font-size: small;
+}
+
+span#testchc, .chc {
+	color: #FFA07A;
+}
+
+span#testchd, .chd {
+	color: #00BFFF;
+}
+
+.rotated270 {
+	vertical-align: center;
+	text-align: right;
+	-webkit-transform: rotate(270deg);	
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+	white-space: nowrap;
+	width: 2em;
+	margin-top: 6em;
+}
+
+.rotated90 {
+	vertical-align: center;
+	text-align: right;
+	-webkit-transform: rotate(90deg);	
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	white-space: nowrap;
+	width: 2em;
+	margin-bottom: 8em;
+}
+
+td.chcchd {
+	border: 1px dashed grey;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+td.lrborder {
+	border-left: 1px dashed grey;
+	border-right: 1px dashed grey;
+}
+
+td.tbborder {
+	border-top: 1px dashed grey;
+	border-bottom: 1px dashed grey;
+}
+
+table#chcchd {
+	border-collapse: collapse;
+}
+
+th.toptable {
+	width: 9em;
+}

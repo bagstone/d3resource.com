@@ -1,0 +1,156 @@
+﻿@font-face {
+	font-family: diablo_font1;
+	src: url('/_res/Exocet1.ttf');
+}
+
+@font-face {
+	font-family: diablo_font2;
+	src: url('/_res/Exocet2.ttf');
+}
+
+body, form, input, div {
+	cursor: default;
+	font-family: diablo_font2;
+	color: #FACC2E;
+	background-color: #000000;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+p {
+	font-family: diablo_font2;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: diablo_font1;
+	color: #B40404;
+	text-decoration: underline;
+}
+
+div.header {
+	font-family: diablo_font1;
+	text-align: center;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	text-decoration: underline;
+}
+
+div.mutual, div.box {
+	text-align: center;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+div.sel {
+	text-align: center;
+	padding: 5px;
+	border: 1px solid grey;
+	background-color: #444444;
+}
+
+div.ns:hover {
+	background-color: #222222;
+	border: 1px solid #B40404;
+}
+
+div#diff, div#players, div#misc, div#items, div#follower {
+	float: left;
+	border: 2px dashed #777777;
+	padding: 10px;
+	margin: 5px;
+}
+
+
+div.difficultyheader {
+	margin-right: 12px;
+	margin-left: 12px;
+}
+
+div.mischeader {
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+div.itemheader {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+div#togglefontdiv {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+
+div#notes {
+	clear: left;
+	padding: 10px;
+}
+
+a {
+	color: #B40404;
+}
+
+span {
+	font-size: 0.9em;
+}
+
+span#result1, span#result2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #B40404;
+}
+
+span.positive {
+	color: #04B404;
+}
+
+span.negative {
+	color: #B40404;
+}
+
+select.ddmenu {
+	background-color: black;
+	font-family: diablo_font2;
+	color: #FACC2E;
+}
+
+span.dfont {
+	font-family: diablo_font2;
+}
+
+div.dfont {
+	font-family: diablo_font2;
+}
+
+span.nodfont {
+	font-family: Verdana;
+}
+
+div.nodfont {
+	font-family: Verdana;
+}
+
+span.normalfont {
+	font-family: Verdana;
+}
+
+li {
+	font-family: Verdana;
+	font-size: 0.9em;
+}
+
+div.normalfont {
+	font-family: Verdana;
+}
+
+p.normalfont {
+	font-size: 1em;
+	font-weight: light;
+	font-family: Verdana;
+}

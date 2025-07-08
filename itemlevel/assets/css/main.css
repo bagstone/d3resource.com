@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  color: #FFC000;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+body
+{
+    background-color: #2E0000;
+}
+
+h1
+{
+    width: 90%;
+    margin: 10% auto 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-size: 6.5vw;
+}
+h1 span
+{
+    font-size: 16px;
+    font-size: 5.5vw;
+}
+
+.input-wrapper
+{
+    width: 95%;
+    max-width: 1024px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+.info-text
+{
+    font-size: 16px;
+    font-size: 4.5vw;
+    margin: 0 auto 25px;
+}
+
+#nameInput,
+#levelInputMin,
+#levelInputMax
+{
+    font-size: 16px;
+    font-size: 4.5vw;
+    padding: 5px 0;
+    border: none;
+    text-align: center;
+    color: black;
+    margin: 0 1%;
+    border-radius: 5px;
+}
+
+#nameInput
+{
+    width: 54%;
+}
+
+#levelInputMin,
+#levelInputMax
+{
+    width: 18%;
+}
+
+.table
+{
+    width: 95%;
+    max-width: 1024px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+th
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-size: 4.5vw;
+    width: 33.33%;
+    border-bottom: 2px solid #FFC000;
+    cursor: pointer;
+    user-select: none;
+}
+
+td
+{
+    font-size: 15px;
+    font-size: 4.5vw;
+    padding: 5px 0;
+    border-bottom: 1px solid #FFC000;
+}
+
+td.lvl
+{
+    font-size: 16px;
+    font-size: 5vw;
+}
+
+footer
+{
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px)
+{
+    h1
+    {
+        margin: 50px auto 25px;
+        font-size: 36px;
+    }
+
+    h1 span
+    {
+        font-size: 30px;
+    }
+
+    .info-text
+    {
+        font-size: 28px;
+        margin: 0 auto 50px;
+    }
+
+    #nameInput,
+    #levelInputMin,
+    #levelInputMax
+    {
+        font-size: 28px;
+    }
+
+    th
+    {
+        font-size: 32px;
+    }
+
+    td
+    {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    td.lvl
+    {
+        font-size: 30px;
+    }
+
+    footer
+    {
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+}

@@ -1,0 +1,80 @@
+﻿html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body, div, span, td.difftable {
+	cursor: default;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: #D8D8D8;
+	background-color: #2E0000;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div#footer {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background-color: #2E0000;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #FFC000;
+}
+
+a.reslink, a.footerlink {
+	color: #FFC000;
+	text-decoration: none;
+}
+
+a.reslink:hover, a.footerlink:hover {
+	text-decoration: underline;
+}
+
+div#main {
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+div#innerflex {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: row;
+}
+
+div.contentdiv {
+	border: 1px solid #666666;
+	margin: 5px;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+span.title {
+	font-size: 1.2em;
+	font-face: bold
+	color: #D8D8D8;
+}
+
+ul.resourceslist {
+	margin-top: 5px;
+	margin-left: -10px;
+}
+
+li.reslistitem {
+	text-align: left;
+}
