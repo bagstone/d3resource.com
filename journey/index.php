@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Diablo 3: Season 24 Journey Tracker</title>
+	<title>Diablo 3: Season 36 Journey Tracker</title>
 <!--	<script src="http://us.battle.net/d3/static/js/tooltips.js"></script> -->
 	<script src="/_script/jquery-3.0.0.min.js"></script>
 	<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
@@ -17,7 +17,7 @@
 
 <div id="maindiv">
 
-<h1>Diablo 3: Season 24 Journey Tracker</h1>
+<h1>Diablo 3: Season 36 Journey Tracker</h1>
 
 <div id="countdowndiv">
 	<div class="countdowndiv">Countdown NA:
@@ -50,7 +50,7 @@
 </div>
 
 <div id="conqdiv" class="hidden">
-<p>List of conquests in Season 24:</p>
+<p>List of conquests in Season 36:</p>
 <table class="conqtablelayout">
 	<tr>
 		<td class="conqlabel">Softcore:</td>
