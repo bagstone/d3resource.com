@@ -71,6 +71,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable top diff col-s33">Season 33</td>
 		<td class="difftable top diff col-s34">Season 34</td>
 		<td class="difftable top diff col-s35">Season 35</td>
+		<td class="difftable top diff col-s36">Season 36</td>
 		<td class="difftable top right">Season</td>
 	</tr>
 	<tr class="difftable">
@@ -110,6 +111,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">25 Oct 2024</td>
 		<td class="difftable col-s34">31 Jan 2025</td>
 		<td class="difftable col-s35">05 Jun 2025</td>
+		<td class="difftable col-s36">12 Sep 2025</td>
 		<td class="difftable right">Start date</td>
 	</tr>
 	<tr class="difftable">
@@ -148,7 +150,8 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s32">20 Oct 2024</td>
 		<td class="difftable col-s33">19 Jan 2025</td>
 		<td class="difftable col-s34">01 Jun 2025</td>
-		<td class="difftable col-s35">???</td>
+		<td class="difftable col-s35">07 Sep 2025</td>
+		<td class="difftable col-s36">???</td>
 		<td class="difftable right">End date</td>
 	</tr>
 	<tr class="difftable">
@@ -187,7 +190,8 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s32">100 days</td>
 		<td class="difftable col-s33">86 days</td>
 		<td class="difftable col-s34">121 days</td>
-		<td class="difftable col-s35">???</td>
+		<td class="difftable col-s35">94 days</td>
+		<td class="difftable col-s36">???</td>
 		<td class="difftable right">Duration</td>
 	</tr>
 	<tr class="difftable">
@@ -227,6 +231,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33"><a href="https://news.blizzard.com/en-us/diablo3/24137819/season-33-shades-of-the-nephalem-preview" target="_blank">2.7.8</a></td>
 		<td class="difftable col-s34"><a href="https://news.blizzard.com/en-us/article/24166297/season-34-lights-calling-preview" target="_blank">2.7.8</a></td>
 		<td class="difftable col-s35"><a href="https://news.blizzard.com/en-us/article/24191146/season-35-eternal-conflict-preview" target="_blank">2.7.8</a></td>
+		<td class="difftable col-s36"><a href="https://news.blizzard.com/en-gb/article/24231417/season-36-the-lords-of-hell-preview" target="_blank">2.7.8</a></td>
 		<td class="difftable right">Patch</td>
 	</tr>
 	<tr class="difftable">
@@ -266,6 +271,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33"><small>Shades o/t Neph.</small></td>
 		<td class="difftable col-s34"><small>Light's Calling</small></td>
 		<td class="difftable col-s35"><small>Eternal Conflict</small></td>
+		<td class="difftable col-s36"><small>Lords of Hell</small></td>
 		<td class="difftable right">Season theme</td>
 	</tr>
 	<tr class="difftable">
@@ -305,6 +311,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33"><a href="https://us.diablo3.blizzard.com/en-us/blog/24135096/diablo-iii-ptr-278-has-concluded-9-13-2024" target="_blank">19 Sep 2024</a></td>
 		<td class="difftable col-s34">(no PTR)</td>
 		<td class="difftable col-s35">(no PTR)</td>
+		<td class="difftable col-s36">(no PTR)</td>
 		<td class="difftable right">PTR</td>
 	</tr>
 	<tr class="difftable">
@@ -344,6 +351,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">36 days</td>
 		<td class="difftable col-s34">-</td>
 		<td class="difftable col-s35">-</td>
+		<td class="difftable col-s36">-</td>
 		<td class="difftable right">PTR lead time</td>
 	</tr>
 	<tr class="difftable">
@@ -383,6 +391,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Earth</td>
 		<td class="difftable col-s34">Savages</td>
 		<td class="difftable col-s35">Wastes</td>
+		<td class="difftable col-s36">Raekor</td>
 		<td class="difftable right">Barb. free set</td>
 	</tr>
 	<tr class="difftable">
@@ -422,6 +431,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Invoker</td>
 		<td class="difftable col-s34">Valor</td>
 		<td class="difftable col-s35">Roland</td>
+		<td class="difftable col-s36">Akkhan</td>
 		<td class="difftable right">Crus. free set</td>
 	</tr>
 	<tr class="difftable">
@@ -461,6 +471,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Shadow</td>
 		<td class="difftable col-s34">GoD</td>
 		<td class="difftable col-s35">UE</td>
+		<td class="difftable col-s36">Marauder</td>
 		<td class="difftable right">DH free set</td>
 	</tr>
 	<tr class="difftable">
@@ -500,6 +511,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Sunwuko</td>
 		<td class="difftable col-s34">Justice</td>
 		<td class="difftable col-s35">Raiment</td>
+		<td class="difftable col-s36">Inna</td>
 		<td class="difftable right">Monk free set</td>
 	</tr>
 	<tr class="difftable">
@@ -539,6 +551,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Inarius</td>
 		<td class="difftable col-s34">Carnival</td>
 		<td class="difftable col-s35">Rathma</td>
+		<td class="difftable col-s36">Pest.</td>
 		<td class="difftable right">Necro free set</td>
 	</tr>
 	<tr class="difftable">
@@ -578,6 +591,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Jade</td>
 		<td class="difftable col-s34">Mundunugu</td>
 		<td class="difftable col-s35">Helltooth</td>
+		<td class="difftable col-s36">Zuni</td>
 		<td class="difftable right">WD free set</td>
 	</tr>
 	<tr class="difftable">
@@ -617,6 +631,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Firebird</td>
 		<td class="difftable col-s34">Typhon's</td>
 		<td class="difftable col-s35">Tal Rasha</td>
+		<td class="difftable col-s36">DMO</td>
 		<td class="difftable right">Wizard free set</td>
 	</tr>
 	<tr class="difftable">
@@ -656,6 +671,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Avarice</td>
 		<td class="difftable col-s34"><small>On A Good Day</small></td>
 		<td class="difftable col-s35">Boss Mode</td>
+		<td class="difftable col-s36">Boss Mode</td>
 		<td class="difftable right">Conquest 1</td>
 	</tr>
 	<tr class="difftable">
@@ -695,6 +711,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Sprinter</td>
 		<td class="difftable col-s34">Sprinter</td>
 		<td class="difftable col-s35">Divinity</td>
+		<td class="difftable col-s36"><small>On A Good Day</small></td>
 		<td class="difftable right">Conquest 2</td>
 	</tr>
 	<tr class="difftable">
@@ -734,6 +751,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Curses!</td>
 		<td class="difftable col-s34">Boss Mode</td>
 		<td class="difftable col-s35">Avarice</td>
+		<td class="difftable col-s36">The Thrill</td>
 		<td class="difftable right">Conquest 3</td>
 	</tr>
 	<tr class="difftable">
@@ -773,6 +791,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33"><small>Speed Demon</small></td>
 		<td class="difftable col-s34">Years of War</td>
 		<td class="difftable col-s35"><small>Speed Demon</small></td>
+		<td class="difftable col-s36">Curses!</td>
 		<td class="difftable right">Conquest 4</td>
 	</tr>
 	<tr class="difftable">
@@ -812,6 +831,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">The Thrill</td>
 		<td class="difftable col-s34"><small>M. of the Univ.</small></td>
 		<td class="difftable col-s35"><small>M. of the Univ.</small></td>
+		<td class="difftable col-s36">Years of War</td>
 		<td class="difftable right">Conquest 5</td>
 	</tr>
 	<tr class="difftable">
@@ -851,6 +871,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33"><small>Pandemonium</small></td>
 		<td class="difftable col-s34">Soulstone</td>
 		<td class="difftable col-s35"><small>Chopping Block</small></td>
+		<td class="difftable col-s36"><small>Terror Resurr.</small></td>
 		<td class="difftable right">Reward: Portrait</td>
 	</tr>	
 	<tr class="difftable">
@@ -890,6 +911,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Pet:<br />Rocky</td>
 		<td class="difftable col-s34">Pennant:<br />Loremaster</td>
 		<td class="difftable col-s35">Pet:<br /><small>Lacuni Cub</small></td>
+		<td class="difftable col-s36">Pet: Lesser<br /><small>Mummy Pet</small></td>
 		<td class="difftable right">Reward:<br />Cosmetic</td>
 	</tr>
 	<!--
@@ -1364,6 +1386,7 @@ Customize...
 	<input type="submit" class="yes unhidetoggle unhideseason" id="s33" value="33" />
 	<input type="submit" class="yes unhidetoggle unhideseason" id="s34" value="34" />
 	<input type="submit" class="yes unhidetoggle unhideseason" id="s35" value="35" />
+	<input type="submit" class="yes unhidetoggle unhideseason" id="s36" value="36" />
 	&nbsp;<a href="#" id="showallseasons">(Show all)</a>
 </div>
 </div>
