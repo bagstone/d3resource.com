@@ -17,7 +17,7 @@ if(isset($_GET['2'])) {
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Diablo 3 Difficulty Overview</title>
 <link rel="stylesheet" type="text/css" href="main-style.css" />
-<link rel="stylesheet" type="text/css" href="/_img/d3rheader.css" />
+<link rel="stylesheet" type="text/css" href="/_style/d3rheader.css" />
 <script src="/_script/jquery-3.0.0.min.js"></script>
 </head>
 <body>
