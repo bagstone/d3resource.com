@@ -636,9 +636,9 @@ $('span.categories').click(function(event) {
 
 // countdown from https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
-var countDownDateNA = new Date("Sep 12, 2025 0:00:00 UTC").getTime();
-var countDownDateEU = new Date("Sep 12, 2025 16:00:00 UTC").getTime();
-var countDownDateAsia = new Date("Sep 12, 2025 8:00:00 UTC").getTime();
+var countDownDateNA = new Date("Sep 12, 2021 0:00:00 UTC").getTime();
+var countDownDateEU = new Date("Sep 12, 2021 16:00:00 UTC").getTime();
+var countDownDateAsia = new Date("Sep 12, 2021 8:00:00 UTC").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
