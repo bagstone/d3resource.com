@@ -266,7 +266,11 @@
 	<br /><br /><br />
 	<span class="button bigger" id="resetall">Reset all</span>&nbsp;&nbsp;&nbsp;
 	<br /><br /><br />
-	<a href="http://www.diablofans.com/forums/diablo-iii-general-forums/diablo-iii-general-discussion/211245-season-journey-tracker" target="_blank">Link to Diablofans forum thread for more info, some tips, and feedback.</a>
+	<div id="footer"><span class="smallfont">Created and maintained by Bagstone#2613 | Contact:
+<a class="footerlink" href="http://bagstone.bsky.social" target="_blank">Bluesky <img src="/_img/bluesky.png" alt="bluesky" /></a> |
+<a class="footerlink" href="https://diablofans.com/members/bagstone" target="_blank">DiabloFans <img src="/_img/diablofans.png" alt="diablofans" /></a> |
+<a class="footerlink" href="https://reddit.com/u/bagstone" target="_blank">Reddit <img src="/_img/reddit.png" alt="reddit" /></a></span></div>
+</div>
 </div>
 
 </div>
