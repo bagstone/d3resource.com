@@ -278,24 +278,20 @@
 <div id="bottomdiv">
 	Haedrig's Gift contains the following class sets this season:
 	<br />
-	Barbarian: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Immortal King's Call</a> - 
-	Crusader: <a href="https://us.diablo3.com/en-us/item/crown-of-the-light-Unique_Helm_Set_03_p3" target="_blank">Seeker of the Light</a> - 
-	Demon Hunter: <a href="https://us.battle.net/d3/en/item/natalyas-sight-Unique_Helm_009_x1" target="_blank">Natalya's Vengeance</a>
+	Barbarian: <a href="https://us.diablo3.com/en/item/raekors-heart-Unique_Chest_Set_05_x1" target="_blank">The Legacy of Raekor</a> - 
+	Crusader: <a href="https://us.diablo3.com/en/item/breastplate-of-akkhan-Unique_Chest_Set_10_x1" target="_blank">Armor of Akkhan</a> - 
+	Demon Hunter: <a href="https://us.diablo3.com/en/item/marauders-carapace-Unique_Chest_Set_07_x1" target="_blank">Embodiment of the Marauder</a>
 	<br />
-	Monk: <a href="https://eu.battle.net/d3/en/item/ulianas-spirit-Unique_Helm_Set_01_p3" target="_blank">Uliana's Stratagem</a> - 
-	Witch Doctor: <a href="https://eu.battle.net/d3/en/item/arachyrs-visage-Unique_Helm_Set_02_p3" target="_blank">Spirit of Arachyr</a> - 
-	Wizard: <a href="https://us.battle.net/d3/en/item/vyrs-sightless-skull-Unique_Helm_Set_13_x1" target="_blank">Vyr's Amazing Arcana</a>
+	Monk: <a href="https://us.diablo3.com/en/item/innas-vast-expanse-Unique_Chest_015_x1" target="_blank">Inna's Mantra</a> - 
+	Witch Doctor: <a href="https://us.diablo3.com/en/item/zunimassas-marrow-Unique_Chest_016_x1" target="_blank">Zunimassa's Haunt</a> - 
+	Wizard: <a href="https://us.diablo3.com/en/item/harness-of-truth-Unique_Chest_Set_02_p2" target="_blank">Delsere's Magnum Opus</a>
 	<br />
-	Necromancer: <a href="https://us.battle.net/d3/en/item/tragouls-guise-P6_Necro_Set_2_Helm" target="_blank">Trag'Oul's Guise</a>
+	Necromancer: <a href="https://us.diablo3.com/en/item/pestilence-mask-P6_Necro_Set_4_Helm" target="_blank">Pestilence Master's Shroud</a>
 	<br /><br /><br />
 	<span class="button bigger" id="resetall">Reset all</span>&nbsp;&nbsp;&nbsp;
 	<span class="button bigger" id="shareprogress">Share progress</span>
 	<br /><br /><br />
-	<div id="footer"><span class="smallfont">Created and maintained by Bagstone#2613 | Contact:
-	<a class="footerlink" href="http://bagstone.bsky.social" target="_blank">Bluesky <img src="/_img/bluesky.png" alt="bluesky" /></a> |
-	<a class="footerlink" href="https://diablofans.com/members/bagstone" target="_blank">DiabloFans <img src="/_img/diablofans.png" alt="diablofans" /></a> |
-	<a class="footerlink" href="https://reddit.com/u/bagstone" target="_blank">Reddit <img src="/_img/reddit.png" alt="reddit" /></a></span></div>
-	</div>
+	<?php include('../footer.php')?>
 </div>
 
 </div>
@@ -640,7 +636,7 @@ $('span.categories').click(function(event) {
 
 // countdown from https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
-var countDownDateNA = new Date("Sep 12, 2025 0:00:00 UTC").getTime();
+var countDownDateNA = new Date("Sep 13, 2025 0:00:00 UTC").getTime();
 var countDownDateEU = new Date("Sep 12, 2025 16:00:00 UTC").getTime();
 var countDownDateAsia = new Date("Sep 12, 2025 8:00:00 UTC").getTime();
 
