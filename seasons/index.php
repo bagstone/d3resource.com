@@ -391,7 +391,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Earth</td>
 		<td class="difftable col-s34">Savages</td>
 		<td class="difftable col-s35">Wastes</td>
-		<td class="difftable col-s36">Raekor</td>
+		<td class="difftable col-s36">IK</td>
 		<td class="difftable right">Barb. free set</td>
 	</tr>
 	<tr class="difftable">
@@ -431,7 +431,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Invoker</td>
 		<td class="difftable col-s34">Valor</td>
 		<td class="difftable col-s35">Roland</td>
-		<td class="difftable col-s36">Akkhan</td>
+		<td class="difftable col-s36">Light</td>
 		<td class="difftable right">Crus. free set</td>
 	</tr>
 	<tr class="difftable">
@@ -471,7 +471,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Shadow</td>
 		<td class="difftable col-s34">GoD</td>
 		<td class="difftable col-s35">UE</td>
-		<td class="difftable col-s36">Marauder</td>
+		<td class="difftable col-s36">Natalya</td>
 		<td class="difftable right">DH free set</td>
 	</tr>
 	<tr class="difftable">
@@ -511,7 +511,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Sunwuko</td>
 		<td class="difftable col-s34">Justice</td>
 		<td class="difftable col-s35">Raiment</td>
-		<td class="difftable col-s36">Inna</td>
+		<td class="difftable col-s36">Uliana</td>
 		<td class="difftable right">Monk free set</td>
 	</tr>
 	<tr class="difftable">
@@ -551,7 +551,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Inarius</td>
 		<td class="difftable col-s34">Carnival</td>
 		<td class="difftable col-s35">Rathma</td>
-		<td class="difftable col-s36">Pest.</td>
+		<td class="difftable col-s36">Inarius</td>
 		<td class="difftable right">Necro free set</td>
 	</tr>
 	<tr class="difftable">
@@ -591,7 +591,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Jade</td>
 		<td class="difftable col-s34">Mundunugu</td>
 		<td class="difftable col-s35">Helltooth</td>
-		<td class="difftable col-s36">Zuni</td>
+		<td class="difftable col-s36">Arachyr</td>
 		<td class="difftable right">WD free set</td>
 	</tr>
 	<tr class="difftable">
@@ -631,7 +631,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Firebird</td>
 		<td class="difftable col-s34">Typhon's</td>
 		<td class="difftable col-s35">Tal Rasha</td>
-		<td class="difftable col-s36">DMO</td>
+		<td class="difftable col-s36">Vyr</td>
 		<td class="difftable right">Wizard free set</td>
 	</tr>
 	<tr class="difftable">

@@ -278,15 +278,15 @@
 <div id="bottomdiv">
 	Haedrig's Gift contains the following class sets this season:
 	<br />
-	Barbarian: <a href="https://us.diablo3.com/en/item/raekors-heart-Unique_Chest_Set_05_x1" target="_blank">The Legacy of Raekor</a> - 
-	Crusader: <a href="https://us.diablo3.com/en/item/breastplate-of-akkhan-Unique_Chest_Set_10_x1" target="_blank">Armor of Akkhan</a> - 
-	Demon Hunter: <a href="https://us.diablo3.com/en/item/marauders-carapace-Unique_Chest_Set_07_x1" target="_blank">Embodiment of the Marauder</a>
+	Barbarian: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Immortal King's Call</a> - 
+	Crusader: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Seeker of the Light</a> - 
+	Demon Hunter: <a href="https://us.battle.net/d3/en/item/natalyas-sight-Unique_Helm_009_x1" target="_blank">Natalya's Vengeance</a>
 	<br />
-	Monk: <a href="https://us.diablo3.com/en/item/innas-vast-expanse-Unique_Chest_015_x1" target="_blank">Inna's Mantra</a> - 
-	Witch Doctor: <a href="https://us.diablo3.com/en/item/zunimassas-marrow-Unique_Chest_016_x1" target="_blank">Zunimassa's Haunt</a> - 
-	Wizard: <a href="https://us.diablo3.com/en/item/harness-of-truth-Unique_Chest_Set_02_p2" target="_blank">Delsere's Magnum Opus</a>
+	Monk: <a href="https://eu.battle.net/d3/en/item/ulianas-spirit-Unique_Helm_Set_01_p3" target="_blank">Uliana's Stratagem</a> - 
+	Witch Doctor: <a href="https://eu.battle.net/d3/en/item/arachyrs-visage-Unique_Helm_Set_02_p3" target="_blank">Spirit of Arachyr</a> - 
+	Wizard: <a href="https://us.battle.net/d3/en/item/vyrs-sightless-skull-Unique_Helm_Set_13_x1" target="_blank">Vyr's Amazing Arcana</a>
 	<br />
-	Necromancer: <a href="https://us.diablo3.com/en/item/pestilence-mask-P6_Necro_Set_4_Helm" target="_blank">Pestilence Master's Shroud</a>
+	Necromancer: <a href="https://us.battle.net/d3/en/item/tragouls-guise-P6_Necro_Set_2_Helm" target="_blank">Trag'Oul's Guise</a>
 	<br /><br /><br />
 	<span class="button bigger" id="resetall">Reset all</span>&nbsp;&nbsp;&nbsp;
 	<span class="button bigger" id="shareprogress">Share progress</span>
