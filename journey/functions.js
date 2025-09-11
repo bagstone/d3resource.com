@@ -72,3 +72,37 @@ function checkComplete() {
 		$('#complete'+i).html('');
 	}
 }
+
+// Convert "YYYY-MM-DD 17:00:00" in a given IANA time zone to a UTC epoch ms.
+// Works without libraries and handles DST correctly.
+function atLocalTimeInZone(isoDate, timeZone, hour = 17, minute = 0, second = 0) {
+  const [y, m, d] = isoDate.split('-').map(Number);
+  const utcGuess = Date.UTC(y, m - 1, d, hour, minute, second, 0);
+
+  // Get the zone offset (in minutes) at a given UTC ms using Intl
+  const offsetAt = (utcMs) => {
+    const dtf = new Intl.DateTimeFormat('en-US', {
+      timeZone,
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', second: '2-digit',
+      hour12: false
+    });
+    const parts = dtf.formatToParts(new Date(utcMs));
+    const vals = {};
+    for (const p of parts) if (p.type !== 'literal') vals[p.type] = Number(p.value);
+    // Local (in the zone) components interpreted as UTC gives us the offset
+    const asUTC = Date.UTC(vals.year, vals.month - 1, vals.day, vals.hour, vals.minute, vals.second);
+    return (asUTC - utcMs) / 60000; // minutes east of UTC (e.g., Paris summer = 120)
+  };
+
+  // First pass
+  let offset = offsetAt(utcGuess);
+  let utc = utcGuess - offset * 60000;
+
+  // One correction pass in case DST boundary shifts the offset
+  const offset2 = offsetAt(utc);
+  if (offset2 !== offset) {
+    utc = utcGuess - offset2 * 60000;
+  }
+  return utc; // epoch ms
+}
