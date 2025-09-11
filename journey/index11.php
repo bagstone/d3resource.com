@@ -611,9 +611,9 @@ $('span.categories').click(function(event) {
 
 // countdown from https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
-var countDownDateNA = new Date("Oct 21, 2017 0:00:00 UTC").getTime();
-var countDownDateEU = new Date("Oct 20, 2017 15:00:00 UTC").getTime();
-var countDownDateAsia = new Date("Oct 20, 2017 10:00:00 UTC").getTime();
+const countDownDateNA   = atLocalTimeInZone(seasonDate, 'America/Los_Angeles');
+const countDownDateEU   = atLocalTimeInZone(seasonDate, 'Europe/Paris');
+const countDownDateAsia = atLocalTimeInZone(seasonDate, 'Asia/Seoul');
 
 // Update the count down every 1 second
 var x = setInterval(function() {

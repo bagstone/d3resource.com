@@ -619,9 +619,9 @@ $('span.categories').click(function(event) {
 
 // countdown from https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
-var countDownDateNA = new Date("Feb 12, 2018 1:00:00 UTC").getTime();
-var countDownDateEU = new Date("Feb 11, 2018 16:00:00 UTC").getTime();
-var countDownDateAsia = new Date("Feb 11, 2018 9:00:00 UTC").getTime();
+const countDownDateNA   = atLocalTimeInZone(seasonDate, 'America/Los_Angeles');
+const countDownDateEU   = atLocalTimeInZone(seasonDate, 'Europe/Paris');
+const countDownDateAsia = atLocalTimeInZone(seasonDate, 'Asia/Seoul');
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -632,7 +632,7 @@ var x = setInterval(function() {
 	// Find the distance between now an the count down date
 	var distanceNA = countDownDateNA - now;
 	if (distanceNA < 0) {
-		document.getElementById("countdown_na").innerHTML = "ENDED";
+		document.getElementById("countdown_na").innerHTML = startOrEnd;
 	} else {
 		var daysNA = Math.floor(distanceNA / (1000 * 60 * 60 * 24));
 		var hoursNA = Math.floor((distanceNA % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -643,7 +643,7 @@ var x = setInterval(function() {
 
 	var distanceEU = countDownDateEU - now;
 	if (distanceEU < 0) {
-		document.getElementById("countdown_eu").innerHTML = "ENDED";
+		document.getElementById("countdown_eu").innerHTML = startOrEnd;
 	} else {
 		var daysEU = Math.floor(distanceEU / (1000 * 60 * 60 * 24));
 		var hoursEU = Math.floor((distanceEU % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -654,7 +654,7 @@ var x = setInterval(function() {
 
 	var distanceAsia = countDownDateAsia - now;
 	if (distanceAsia < 0) {
-		document.getElementById("countdown_asia").innerHTML = "ENDED";
+		document.getElementById("countdown_asia").innerHTML = startOrEnd;
 	} else {
 		var daysAsia = Math.floor(distanceAsia / (1000 * 60 * 60 * 24));
 		var hoursAsia = Math.floor((distanceAsia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
