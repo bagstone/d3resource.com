@@ -6,7 +6,7 @@
 <!--	<script src="http://us.battle.net/d3/static/js/tooltips.js"></script> -->
 	<script src="/_script/jquery-3.0.0.min.js"></script>
 	<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
-	<script src="functions.js?v=20250911"></script>
+	<script src="functions.js?v=20250912"></script>
 	<link rel="stylesheet" type="text/css" href="main-style.css" />
 	<link rel="stylesheet" type="text/css" href="/_style/d3rheader.css" />
 	<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.min.css" />
