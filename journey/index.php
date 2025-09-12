@@ -148,7 +148,7 @@
 		<td id="td-sj6c" class="cat6 sjtable sjitem kill">Cydaea<br />(T10)</td>
 		<td id="td-sj7c" class="cat7 sjtable sjitem kill">Maghda<br />(T13)</td>
 		<td id="td-sj8c" class="cat8 sjtable sjitem kill">Araneae (T13)<br />in under 30 sec.</td>
-		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Skel. King (T13)<br />in under 30 sec.</td>
+		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Skel. King (T13)<br />in under 15 sec.</td>
 	</tr>
 	<tr class="sjtable">
 		<td id="td-sj1d" class="cat1 sjtable sjitem kill">Azmodan</td>
