@@ -283,7 +283,7 @@
 	Haedrig's Gift contains the following class sets this season:
 	<br />
 	Barbarian: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Immortal King's Call</a> - 
-	Crusader: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Seeker of the Light</a> - 
+	Crusader: <a href="https://us.diablo3.blizzard.com/en-us/item/crown-of-the-light-Unique_Helm_Set_03_p3" target="_blank">Seeker of the Light</a> - 
 	Demon Hunter: <a href="https://us.battle.net/d3/en/item/natalyas-sight-Unique_Helm_009_x1" target="_blank">Natalya's Vengeance</a>
 	<br />
 	Monk: <a href="https://eu.battle.net/d3/en/item/ulianas-spirit-Unique_Helm_Set_01_p3" target="_blank">Uliana's Stratagem</a> - 
