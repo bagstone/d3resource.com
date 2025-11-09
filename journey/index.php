@@ -651,16 +651,16 @@ function formatDate(d) {
     }
 }
 
-// After the *latest* start + 7 days, we show the "started a while ago" message
-const LATEST_START = Math.max(countDownDateNA, countDownDateEU, countDownDateAsia);
-const ONE_WEEK_MS  = 7 * 24 * 60 * 60 * 1000;
-const REPLACE_AT   = LATEST_START + ONE_WEEK_MS;
-
 // countdown from https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
 const countDownDateNA   = atLocalTimeInZone(seasonDate, 'America/Los_Angeles');
 const countDownDateEU   = atLocalTimeInZone(seasonDate, 'Europe/Paris');
 const countDownDateAsia = atLocalTimeInZone(seasonDate, 'Asia/Seoul');
+
+// After the *latest* start + 7 days, we show the "started a while ago" message
+const LATEST_START = Math.max(countDownDateNA, countDownDateEU, countDownDateAsia);
+const ONE_WEEK_MS  = 7 * 24 * 60 * 60 * 1000;
+const REPLACE_AT   = LATEST_START + ONE_WEEK_MS;
 
 // Update the count down every 1 second
 var x = setInterval(function() {
