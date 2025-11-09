@@ -661,6 +661,7 @@ const countDownDateAsia = atLocalTimeInZone(seasonDate, 'Asia/Seoul');
 const LATEST_START = Math.max(countDownDateNA, countDownDateEU, countDownDateAsia);
 const ONE_WEEK_MS  = 7 * 24 * 60 * 60 * 1000;
 const REPLACE_AT   = LATEST_START + ONE_WEEK_MS;
+const printedStartDate = formatDate(new Date(LATEST_START));
 
 // Update the count down every 1 second
 var x = setInterval(function() {
