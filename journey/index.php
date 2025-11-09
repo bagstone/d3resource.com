@@ -638,6 +638,24 @@ $('span.categories').click(function(event) {
 });
 
 
+// Helper: format a nice date string (uses user's locale)
+function formatDate(d) {
+    try {
+        return new Intl.DateTimeFormat(undefined, {
+        year: 'numeric', month: 'long', day: 'numeric',
+        weekday: 'long'
+        }).format(d);
+    } catch (e) {
+        // Fallback
+        return d.toDateString();
+    }
+}
+
+// After the *latest* start + 7 days, we show the "started a while ago" message
+const LATEST_START = Math.max(countDownDateNA, countDownDateEU, countDownDateAsia);
+const ONE_WEEK_MS  = 7 * 24 * 60 * 60 * 1000;
+const REPLACE_AT   = LATEST_START + ONE_WEEK_MS;
+
 // countdown from https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
 const countDownDateNA   = atLocalTimeInZone(seasonDate, 'America/Los_Angeles');
@@ -650,6 +668,25 @@ var x = setInterval(function() {
 	// Get todays date and time
 	var now = new Date().getTime();
 
+
+    // If a week has passed since the last region started, replace whole block
+    if (now >= REPLACE_AT) {
+        var container = document.getElementById('countdowndiv');
+        if (container) {
+        container.outerHTML =
+            `<div id="countdowndiv">
+            <div class="countdowndiv">
+                The season started a while ago (on ${printedStartDate}), it will last approximately 90 days
+                but could also be shorter or even as long as 4 months (see the
+                <a href="https://d3resource.com/seasons/index.php" target="_blank" rel="noopener">seasons overview</a>
+                for duration of the last few seasons).
+            </div>
+            </div>`;
+        }
+        clearInterval(x);
+        return;
+    }
+    
 	// Find the distance between now an the count down date
 	var distanceNA = countDownDateNA - now;
 	if (distanceNA < 0) {
