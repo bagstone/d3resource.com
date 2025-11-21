@@ -72,6 +72,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable top diff col-s34">Season 34</td>
 		<td class="difftable top diff col-s35">Season 35</td>
 		<td class="difftable top diff col-s36">Season 36</td>
+		<td class="difftable top diff col-s37">Season 37</td>
 		<td class="difftable top right">Season</td>
 	</tr>
 	<tr class="difftable">
@@ -112,6 +113,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">31 Jan 2025</td>
 		<td class="difftable col-s35">05 Jun 2025</td>
 		<td class="difftable col-s36">12 Sep 2025</td>
+		<td class="difftable col-s37">05 Dec 2025</td>
 		<td class="difftable right">Start date</td>
 	</tr>
 	<tr class="difftable">
@@ -151,7 +153,8 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">19 Jan 2025</td>
 		<td class="difftable col-s34">01 Jun 2025</td>
 		<td class="difftable col-s35">07 Sep 2025</td>
-		<td class="difftable col-s36">???</td>
+		<td class="difftable col-s36">30 Nov 2025</td>
+		<td class="difftable col-s37">???</td>
 		<td class="difftable right">End date</td>
 	</tr>
 	<tr class="difftable">
@@ -191,7 +194,8 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">86 days</td>
 		<td class="difftable col-s34">121 days</td>
 		<td class="difftable col-s35">94 days</td>
-		<td class="difftable col-s36">???</td>
+		<td class="difftable col-s36">79 days</td>
+		<td class="difftable col-s37">???</td>
 		<td class="difftable right">Duration</td>
 	</tr>
 	<tr class="difftable">
@@ -232,6 +236,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34"><a href="https://news.blizzard.com/en-us/article/24166297/season-34-lights-calling-preview" target="_blank">2.7.8</a></td>
 		<td class="difftable col-s35"><a href="https://news.blizzard.com/en-us/article/24191146/season-35-eternal-conflict-preview" target="_blank">2.7.8</a></td>
 		<td class="difftable col-s36"><a href="https://news.blizzard.com/en-gb/article/24231417/season-36-the-lords-of-hell-preview" target="_blank">2.7.8</a></td>
+		<td class="difftable col-s37"><a href="https://news.blizzard.com/en-us/article/24243442/season-37-the-forbidden-archives-preview" target="_blank">2.7.8</a></td>
 		<td class="difftable right">Patch</td>
 	</tr>
 	<tr class="difftable">
@@ -272,6 +277,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34"><small>Light's Calling</small></td>
 		<td class="difftable col-s35"><small>Eternal Conflict</small></td>
 		<td class="difftable col-s36"><small>Lords of Hell</small></td>
+		<td class="difftable col-s37"><small>Forb. Archives</small></td>
 		<td class="difftable right">Season theme</td>
 	</tr>
 	<tr class="difftable">
@@ -312,6 +318,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">(no PTR)</td>
 		<td class="difftable col-s35">(no PTR)</td>
 		<td class="difftable col-s36">(no PTR)</td>
+		<td class="difftable col-s37">(no PTR)</td>
 		<td class="difftable right">PTR</td>
 	</tr>
 	<tr class="difftable">
@@ -352,6 +359,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">-</td>
 		<td class="difftable col-s35">-</td>
 		<td class="difftable col-s36">-</td>
+		<td class="difftable col-s37">-</td>
 		<td class="difftable right">PTR lead time</td>
 	</tr>
 	<tr class="difftable">
@@ -392,6 +400,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Savages</td>
 		<td class="difftable col-s35">Wastes</td>
 		<td class="difftable col-s36">IK</td>
+		<td class="difftable col-s37">Earth</td>
 		<td class="difftable right">Barb. free set</td>
 	</tr>
 	<tr class="difftable">
@@ -432,6 +441,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Valor</td>
 		<td class="difftable col-s35">Roland</td>
 		<td class="difftable col-s36">Light</td>
+		<td class="difftable col-s37">Invoker</td>
 		<td class="difftable right">Crus. free set</td>
 	</tr>
 	<tr class="difftable">
@@ -472,6 +482,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">GoD</td>
 		<td class="difftable col-s35">UE</td>
 		<td class="difftable col-s36">Natalya</td>
+		<td class="difftable col-s37">Shadow</td>
 		<td class="difftable right">DH free set</td>
 	</tr>
 	<tr class="difftable">
@@ -512,6 +523,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Justice</td>
 		<td class="difftable col-s35">Raiment</td>
 		<td class="difftable col-s36">Uliana</td>
+		<td class="difftable col-s37">Sunwuko</td>
 		<td class="difftable right">Monk free set</td>
 	</tr>
 	<tr class="difftable">
@@ -551,7 +563,8 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s33">Inarius</td>
 		<td class="difftable col-s34">Carnival</td>
 		<td class="difftable col-s35">Rathma</td>
-		<td class="difftable col-s36">Inarius</td>
+		<td class="difftable col-s36">Trag'Oul</td>
+		<td class="difftable col-s37">Inarius</td>
 		<td class="difftable right">Necro free set</td>
 	</tr>
 	<tr class="difftable">
@@ -592,6 +605,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Mundunugu</td>
 		<td class="difftable col-s35">Helltooth</td>
 		<td class="difftable col-s36">Arachyr</td>
+		<td class="difftable col-s37">Jade</td>
 		<td class="difftable right">WD free set</td>
 	</tr>
 	<tr class="difftable">
@@ -632,6 +646,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Typhon's</td>
 		<td class="difftable col-s35">Tal Rasha</td>
 		<td class="difftable col-s36">Vyr</td>
+		<td class="difftable col-s37">Firebird</td>
 		<td class="difftable right">Wizard free set</td>
 	</tr>
 	<tr class="difftable">
@@ -672,6 +687,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34"><small>On A Good Day</small></td>
 		<td class="difftable col-s35">Boss Mode</td>
 		<td class="difftable col-s36">Boss Mode</td>
+		<td class="difftable col-s37">Divinity</td>
 		<td class="difftable right">Conquest 1</td>
 	</tr>
 	<tr class="difftable">
@@ -712,6 +728,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Sprinter</td>
 		<td class="difftable col-s35">Divinity</td>
 		<td class="difftable col-s36"><small>On A Good Day</small></td>
+		<td class="difftable col-s37">Sprinter</td>
 		<td class="difftable right">Conquest 2</td>
 	</tr>
 	<tr class="difftable">
@@ -752,6 +769,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Boss Mode</td>
 		<td class="difftable col-s35">Avarice</td>
 		<td class="difftable col-s36">The Thrill</td>
+		<td class="difftable col-s37">The Thrill</td>
 		<td class="difftable right">Conquest 3</td>
 	</tr>
 	<tr class="difftable">
@@ -792,6 +810,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Years of War</td>
 		<td class="difftable col-s35"><small>Speed Demon</small></td>
 		<td class="difftable col-s36">Curses!</td>
+		<td class="difftable col-s37">Curses!</td>
 		<td class="difftable right">Conquest 4</td>
 	</tr>
 	<tr class="difftable">
@@ -832,6 +851,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34"><small>M. of the Univ.</small></td>
 		<td class="difftable col-s35"><small>M. of the Univ.</small></td>
 		<td class="difftable col-s36">Years of War</td>
+		<td class="difftable col-s37"><small>M. of the Univ.</small></td>
 		<td class="difftable right">Conquest 5</td>
 	</tr>
 	<tr class="difftable">
@@ -872,6 +892,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Soulstone</td>
 		<td class="difftable col-s35"><small>Chopping Block</small></td>
 		<td class="difftable col-s36"><small>Terror Resurr.</small></td>
+		<td class="difftable col-s37">Imperius</td>
 		<td class="difftable right">Reward: Portrait</td>
 	</tr>	
 	<tr class="difftable">
@@ -912,6 +933,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s34">Pennant:<br />Loremaster</td>
 		<td class="difftable col-s35">Pet:<br /><small>Lacuni Cub</small></td>
 		<td class="difftable col-s36">Pet: Lesser<br /><small>Mummy Pet</small></td>
+		<td class="difftable col-s37">Pet:<br />Blaine's Bear</td>
 		<td class="difftable right">Reward:<br />Cosmetic</td>
 	</tr>
 	<!--
