@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Diablo 3: Season 36 Journey Tracker</title>
+	<title>Diablo 3: Season 37 Journey Tracker</title>
 <!--	<script src="http://us.battle.net/d3/static/js/tooltips.js"></script> -->
 	<script src="/_script/jquery-3.0.0.min.js"></script>
 	<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
@@ -17,11 +17,11 @@
 
 <div id="maindiv">
 
-<h1>Diablo 3: Season 36 Journey Tracker</h1>
+<h1>Diablo 3: Season 37 Journey Tracker</h1>
 
 <script>
-	var seasonDate = '2025-11-30';
-	var startOrEnd = 'ENDED';
+	var seasonDate = '2025-12-05';
+	var startOrEnd = 'STARTED';
 </script>
 <div id="countdowndiv">
 	<div class="countdowndiv">Countdown NA/console:
@@ -54,7 +54,7 @@
 </div>
 
 <div id="conqdiv" class="hidden">
-<p>List of conquests in Season 36:</p>
+<p>List of conquests in Season 37:</p>
 <table class="conqtablelayout">
 	<tr>
 		<td class="conqlabel">Softcore:</td>
@@ -67,16 +67,16 @@
 			<span class="conqdesc">350 kills TX cursed chest</span>
 		</td>
 		<td id="conq-c" class="conqitem">
-			<span class="conqtitle">Boss Mode</span><br />
-			<span class="conqdesc">All bosses in 20m on TX</span>
+			<span class="conqtitle">Sprinter</span><br />
+			<span class="conqdesc">Campaign in 1 hour</span>
 		</td>
 		<td id="conq-d" class="conqitem">
-			<span class="conqtitle">On a Good Day</span><br />
-			<span class="conqdesc">3 gems to 65</span>
+			<span class="conqtitle">Divinity</span><br />
+			<span class="conqdesc">GR 75 solo</span>
 		</td>
 		<td id="conq-e" class="conqitem">
-			<span class="conqtitle">Years of War</span><br />
-			<span class="conqdesc">GR55 with 6 sets</span>
+			<span class="conqtitle">Masters of the Universe</span><br />
+			<span class="conqdesc">Master 8 set dungeons</span>
 		</td>
 	</tr>
 	<tr>
@@ -90,16 +90,16 @@
 			<span class="conqdesc">350 kills TX cursed chest</span>
 		</td>
 		<td id="conq-h" class="conqitem">
-			<span class="conqtitle">Worlds Apart</span><br />
-			<span class="conqdesc">All bosses in 20m on TX</span>
+			<span class="conqtitle">Speed Racer</span><br />
+			<span class="conqdesc">Campaign in 1 hour</span>
 		</td>
 		<td id="conq-i" class="conqitem">
-			<span class="conqtitle">I Can't Stop</span><br />
-			<span class="conqdesc">3 gems to 65</span>
+			<span class="conqtitle">Lionhearted</span><br />
+			<span class="conqdesc">GR 75 solo</span>
 		</td>
 		<td id="conq-j" class="conqitem">
-			<span class="conqtitle">Dynasty</span><br />
-			<span class="conqdesc">GR55 with 6 sets</span>
+			<span class="conqtitle">Masters of Sets</span><br />
+			<span class="conqdesc">Master 8 set dungeons</span>
 		</td>
 	</tr>
 </table>
@@ -121,7 +121,7 @@
 		<td id="td-sj1a" class="cat1 sjtable sjitem rift">Normal Rift</td>
 		<td id="td-sj2a" class="cat2 sjtable sjitem rift">Expert Rift</td>
 		<td id="td-sj3a" class="cat3 sjtable sjitem rift">Master Rift</td>
-		<td id="td-sj4a" class="cat4 sjtable sjitem rift">T1 Rift</td>
+		<td id="td-sj4a" class="cat4 sjtable sjitem rift">T1 Rift<br />(Level 70)</td>
 		<td id="td-sj5a" class="cat5 sjtable sjitem rift">T5 Rift</td>
 		<td id="td-sj6a" class="cat6 sjtable sjitem rift">T10 Rift in<br />under 6 minutes</td>
 		<td id="td-sj7a" class="cat7 sjtable sjitem rift">T12 Rift in<br />under 6 minutes</td>
@@ -140,24 +140,24 @@
 		<td id="td-sj9b" class="cat9 sjtable sjitem solo">GR70 solo</td>
 	</tr>
 	<tr class="sjtable">
-		<td id="td-sj1c" class="cat1 sjtable sjitem kill">Malthael</td>
-		<td id="td-sj2c" class="cat2 sjtable sjitem kill">Diablo<br />(Hard, level 60+)</td>
-		<td id="td-sj3c" class="cat3 sjtable sjitem kill">Rakanoth<br />(Master, level 70+)</td>
-		<td id="td-sj4c" class="cat4 sjtable sjitem kill">Butcher<br />(T2, level 70)</td>
-		<td id="td-sj5c" class="cat5 sjtable sjitem kill">Kulle (T7)</td>
-		<td id="td-sj6c" class="cat6 sjtable sjitem kill">Cydaea<br />(T10)</td>
-		<td id="td-sj7c" class="cat7 sjtable sjitem kill">Maghda<br />(T13)</td>
-		<td id="td-sj8c" class="cat8 sjtable sjitem kill">Araneae (T13)<br />in under 30 sec.</td>
-		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Skel. King (T13)<br />in under 15 sec.</td>
+		<td id="td-sj1c" class="cat1 sjtable sjitem kill">Diablo</td>
+		<td id="td-sj2c" class="cat2 sjtable sjitem kill">Rakanoth<br />(Hard, level 60+)</td>
+		<td id="td-sj3c" class="cat3 sjtable sjitem kill">Adria<br />(Master, level 70+)</td>
+		<td id="td-sj4c" class="cat4 sjtable sjitem kill">Belial<br />(T2, level 70)</td>
+		<td id="td-sj5c" class="cat5 sjtable sjitem kill">Queen Araneae<br />(T7)</td>
+		<td id="td-sj6c" class="cat6 sjtable sjitem kill">Urzael<br />(T10)</td>
+		<td id="td-sj7c" class="cat7 sjtable sjitem kill">Kulle<br />(T13)</td>
+		<td id="td-sj8c" class="cat8 sjtable sjitem kill">Cydaea (T13)<br />in under 15 sec.</td>
+		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Maghda (T13)<br />in under 10 sec.</td>
 	</tr>
 	<tr class="sjtable">
-		<td id="td-sj1d" class="cat1 sjtable sjitem kill">Azmodan</td>
-		<td id="td-sj2d" class="cat2 sjtable sjitem kill">Siegebreaker<br />(Hard, level 60+)</td>
-		<td id="td-sj3d" class="cat3 sjtable sjitem kill">Izual<br />(Master, level 70+)</td>
-		<td id="td-sj4d" class="cat4 sjtable sjitem kill">Urzael<br />(T4, level 70)</td>
-		<td id="td-sj5d" class="cat5 sjtable sjitem kill">Ghom (T7)</td>
-		<td id="td-sj6d" class="cat6 sjtable sjitem kill">Adria<br />(T10)</td>
-		<td id="td-sj7d" class="cat7 sjtable sjitem kill">Belial<br />(T13)</td>
+		<td id="td-sj1d" class="cat1 sjtable sjitem kill">Izual</td>
+		<td id="td-sj2d" class="cat2 sjtable sjitem kill">Skeleton King<br />(Hard, level 60+)</td>
+		<td id="td-sj3d" class="cat3 sjtable sjitem kill">Siegebreaker<br />(Master, level 70+)</td>
+		<td id="td-sj4d" class="cat4 sjtable sjitem kill">Ghom<br />(T4, level 70)</td>
+		<td id="td-sj5d" class="cat5 sjtable sjitem kill">Butcher<br />(T7)</td>
+		<td id="td-sj6d" class="cat6 sjtable sjitem kill">Azmodan<br />(T10)</td>
+		<td id="td-sj7d" class="cat7 sjtable sjitem kill">Malthael<br />(T13)</td>
 		<td id="td-sj8d" class="cat8 sjtable sjitem kill">Greed (T13)</td>
 		<td class="sjtable empty"></td>
 	</tr>
@@ -252,8 +252,8 @@
 	<tr class="sjtable">
 		<td id="td-sj1m" class="cat1 sjtable rewards current">(No reward)</td>
 		<td id="td-sj2m" class="cat2 sjtable rewards">1<sup>st</sup> Haedrig<br />(head+hands)<br />transmog (lvl 70)</td>
-		<td id="td-sj3m" class="cat3 sjtable rewards">2<sup>nd</sup> Haedrig<br />(feet+shoulders;<br />barb: feet+belt<br />DH: feet+ring)</td>
-		<td id="td-sj4m" class="cat4 sjtable rewards">3<sup>rd</sup> Haedrig,<br />mummy pet,<br />portrait frame</td>
+		<td id="td-sj3m" class="cat3 sjtable rewards">2<sup>nd</sup> Haedrig<br />(feet+shoulders;<br />monk: neck+sh.)</td>
+		<td id="td-sj4m" class="cat4 sjtable rewards">3<sup>rd</sup> Haedrig,<br /><a href="http://diablo.wikia.com/wiki/Blaine%27s_Bear" target="_blank">Blaine’s Bear</a>,<br />portrait frame</td>
 		<td id="td-sj5m" class="cat5 sjtable rewards">Portrait<br />frame</td>
 		<td id="td-sj6m" class="cat6 sjtable rewards">Portrait<br />frame</td>
 		<td id="td-sj7m" class="cat7 sjtable rewards">Portrait<br />frame</td>
@@ -282,15 +282,15 @@
 <div id="bottomdiv">
 	Haedrig's Gift contains the following class sets this season:
 	<br />
-	Barbarian: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Immortal King's Call</a> - 
-	Crusader: <a href="https://us.diablo3.blizzard.com/en-us/item/crown-of-the-light-Unique_Helm_Set_03_p3" target="_blank">Seeker of the Light</a> - 
-	Demon Hunter: <a href="https://us.battle.net/d3/en/item/natalyas-sight-Unique_Helm_009_x1" target="_blank">Natalya's Vengeance</a>
+	Barbarian: <a href="https://us.battle.net/d3/en/item/eyes-of-the-earth-Unique_Helm_Set_15_x1" target="_blank">Might of the Earth</a> - 
+	Crusader: <a href="https://us.battle.net/d3/en/item/crown-of-the-invoker-Unique_Helm_Set_12_x1" target="_blank">Thorns of the Invoker</a> - 
+	Demon Hunter: <a href="https://us.battle.net/d3/en/item/the-shadows-mask-Unique_Helm_Set_14_x1" target="_blank">The Shadow's Mantle</a>
 	<br />
-	Monk: <a href="https://eu.battle.net/d3/en/item/ulianas-spirit-Unique_Helm_Set_01_p3" target="_blank">Uliana's Stratagem</a> - 
-	Witch Doctor: <a href="https://eu.battle.net/d3/en/item/arachyrs-visage-Unique_Helm_Set_02_p3" target="_blank">Spirit of Arachyr</a> - 
-	Wizard: <a href="https://us.battle.net/d3/en/item/vyrs-sightless-skull-Unique_Helm_Set_13_x1" target="_blank">Vyr's Amazing Arcana</a>
+	Monk: <a href="https://us.battle.net/d3/en/item/sunwukos-crown-Unique_Helm_Set_11_x1" target="_blank">Monkey King's Garb</a> - 
+	Witch Doctor: <a href="https://us.battle.net/d3/en/item/jade-harvesters-wisdom-Unique_Helm_Set_09_x1" target="_blank">Raiment of the Jade Harvester</a> - 
+	Wizard: <a href="https://us.battle.net/d3/en/item/firebirds-plume-Unique_Helm_Set_06_x1" target="_blank">Firebird's Finery</a>
 	<br />
-	Necromancer: <a href="https://us.battle.net/d3/en/item/tragouls-guise-P6_Necro_Set_2_Helm" target="_blank">Trag'Oul's Guise</a>
+	Necromancer: <a href="https://us.battle.net/d3/en/item/inariuss-understanding-P6_Necro_Set_3_Helm" target="_blank">Grace of Inarius</a>
 	<br /><br /><br />
 	<span class="button bigger" id="resetall">Reset all</span>&nbsp;&nbsp;&nbsp;
 	<span class="button bigger" id="shareprogress">Share progress</span>
@@ -676,7 +676,7 @@ var x = setInterval(function() {
         if (container) {
         container.outerHTML =
             `<div id="countdowndiv">
-            <div class="countdowndiv">
+            <div>
                 The season started a while ago (on ${printedStartDate}), it will last approximately 90 days
                 but could also be shorter or even as long as 4 months (see the
                 <a href="https://d3resource.com/seasons/index.php" target="_blank" rel="noopener">seasons overview</a>
