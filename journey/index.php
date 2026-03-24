@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Diablo 3: Season 37 Journey Tracker</title>
+	<title>Diablo 3: Season 38 Journey Tracker</title>
 <!--	<script src="http://us.battle.net/d3/static/js/tooltips.js"></script> -->
 	<script src="/_script/jquery-3.0.0.min.js"></script>
 	<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
-	<script src="functions.js?v=20250912"></script>
+	<script src="functions.js"></script>
 	<link rel="stylesheet" type="text/css" href="main-style.css" />
 	<link rel="stylesheet" type="text/css" href="/_style/d3rheader.css" />
 	<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.min.css" />
@@ -17,14 +17,14 @@
 
 <div id="maindiv">
 
-<h1>Diablo 3: Season 37 Journey Tracker</h1>
+<h1>Diablo 3: Season 38 Journey Tracker</h1>
 
 <script>
-	var seasonDate = '2025-12-05';
+	var seasonDate = '2026-03-27';
 	var startOrEnd = 'STARTED';
 </script>
 <div id="countdowndiv">
-	<div class="countdowndiv">Countdown NA/console:
+	<div class="countdowndiv">Countdown NA/Console:
 		<p class="countdown" id="countdown_na"></p>
 	</div>
 
@@ -36,7 +36,6 @@
 		<p class="countdown" id="countdown_asia"></p>
 	</div>
 </div>
-
 
 <div id="legenddiv">
 	<span class="categories" id="conquests">Conquests</span>
@@ -54,27 +53,27 @@
 </div>
 
 <div id="conqdiv" class="hidden">
-<p>List of conquests in Season 37:</p>
+<p>List of conquests in Season 38:</p>
 <table class="conqtablelayout">
 	<tr>
 		<td class="conqlabel">Softcore:</td>
 		<td id="conq-a" class="conqitem">
-			<span class="conqtitle">The Thrill</span><br />
-			<span class="conqdesc">GR45 w/o set items</span>
+			<span class="conqtitle">Boss Mode</span><br />
+			<span class="conqdesc">All bosses in 20m on TX</span>
 		</td>
-		<td id="conq-b" class="conqitem">
+		<td id="conq-b" class="conqitem soloconq">
 			<span class="conqtitle">Curses!</span><br />
-			<span class="conqdesc">350 kills TX cursed chest</span>
+			<span class="conqdesc">350 kills TX Cursed Chest</span>
 		</td>
 		<td id="conq-c" class="conqitem">
-			<span class="conqtitle">Sprinter</span><br />
-			<span class="conqdesc">Campaign in 1 hour</span>
-		</td>
-		<td id="conq-d" class="conqitem">
 			<span class="conqtitle">Divinity</span><br />
-			<span class="conqdesc">GR 75 solo</span>
+			<span class="conqdesc">GR75 solo</span>
 		</td>
-		<td id="conq-e" class="conqitem">
+		<td id="conq-d" class="conqitem gemconq">
+			<span class="conqtitle">Years of War</span><br />
+			<span class="conqdesc">GR55 solo with 6 sets</span>
+		</td>
+		<td id="conq-e" class="conqitem soloconq">
 			<span class="conqtitle">Masters of the Universe</span><br />
 			<span class="conqdesc">Master 8 set dungeons</span>
 		</td>
@@ -82,22 +81,22 @@
 	<tr>
 		<td class="conqlabel">Hardcore:</td>
 		<td id="conq-f" class="conqitem">
-			<span class="conqtitle">Super Human</span><br />
-			<span class="conqdesc">GR45 w/o set items</span>
+			<span class="conqtitle">Worlds Apart</span><br />
+			<span class="conqdesc">All bosses in 20m on TX</span>
 		</td>
-		<td id="conq-g" class="conqitem">
-			<span class="conqtitle">Stars align</span><br />
-			<span class="conqdesc">350 kills TX cursed chest</span>
+		<td id="conq-g" class="conqitem soloconq">
+			<span class="conqtitle">Stars Align</span><br />
+			<span class="conqdesc">350 kills TX Cursed Chest</span>
 		</td>
 		<td id="conq-h" class="conqitem">
-			<span class="conqtitle">Speed Racer</span><br />
-			<span class="conqdesc">Campaign in 1 hour</span>
-		</td>
-		<td id="conq-i" class="conqitem">
 			<span class="conqtitle">Lionhearted</span><br />
-			<span class="conqdesc">GR 75 solo</span>
+			<span class="conqdesc">GR75 solo</span>
 		</td>
-		<td id="conq-j" class="conqitem">
+		<td id="conq-i" class="conqitem gemconq">
+			<span class="conqtitle">Dynasty</span><br />
+			<span class="conqdesc">GR55 solo with 6 sets</span>
+		</td>
+		<td id="conq-j" class="conqitem soloconq">
 			<span class="conqtitle">Masters of Sets</span><br />
 			<span class="conqdesc">Master 8 set dungeons</span>
 		</td>
@@ -121,7 +120,7 @@
 		<td id="td-sj1a" class="cat1 sjtable sjitem rift">Normal Rift</td>
 		<td id="td-sj2a" class="cat2 sjtable sjitem rift">Expert Rift</td>
 		<td id="td-sj3a" class="cat3 sjtable sjitem rift">Master Rift</td>
-		<td id="td-sj4a" class="cat4 sjtable sjitem rift">T1 Rift<br />(Level 70)</td>
+		<td id="td-sj4a" class="cat4 sjtable sjitem rift">T1 Rift</td>
 		<td id="td-sj5a" class="cat5 sjtable sjitem rift">T5 Rift</td>
 		<td id="td-sj6a" class="cat6 sjtable sjitem rift">T10 Rift in<br />under 6 minutes</td>
 		<td id="td-sj7a" class="cat7 sjtable sjitem rift">T12 Rift in<br />under 6 minutes</td>
@@ -140,24 +139,24 @@
 		<td id="td-sj9b" class="cat9 sjtable sjitem solo">GR70 solo</td>
 	</tr>
 	<tr class="sjtable">
-		<td id="td-sj1c" class="cat1 sjtable sjitem kill">Diablo</td>
-		<td id="td-sj2c" class="cat2 sjtable sjitem kill">Rakanoth<br />(Hard, level 60+)</td>
-		<td id="td-sj3c" class="cat3 sjtable sjitem kill">Adria<br />(Master, level 70+)</td>
-		<td id="td-sj4c" class="cat4 sjtable sjitem kill">Belial<br />(T2, level 70)</td>
-		<td id="td-sj5c" class="cat5 sjtable sjitem kill">Queen Araneae<br />(T7)</td>
-		<td id="td-sj6c" class="cat6 sjtable sjitem kill">Urzael<br />(T10)</td>
-		<td id="td-sj7c" class="cat7 sjtable sjitem kill">Kulle<br />(T13)</td>
-		<td id="td-sj8c" class="cat8 sjtable sjitem kill">Cydaea (T13)<br />in under 15 sec.</td>
-		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Maghda (T13)<br />in under 10 sec.</td>
+		<td id="td-sj1c" class="cat1 sjtable sjitem kill">Siegebreaker</td>
+		<td id="td-sj2c" class="cat2 sjtable sjitem kill">Azmodan<br />(Hard, level 60+)</td>
+		<td id="td-sj3c" class="cat3 sjtable sjitem kill">Urzael<br />(Master, level 70+)</td>
+		<td id="td-sj4c" class="cat4 sjtable sjitem kill">Adria<br />(T2, level 70)</td>
+		<td id="td-sj5c" class="cat5 sjtable sjitem kill">Cydaea<br />(T7)</td>
+		<td id="td-sj6c" class="cat6 sjtable sjitem kill">Diablo<br />(T10)</td>
+		<td id="td-sj7c" class="cat7 sjtable sjitem kill">Aranaea<br />(T13)</td>
+		<td id="td-sj8c" class="cat8 sjtable sjitem kill">Izual<br />in under 15 sec.</td>
+		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Belial<br />in under 60 sec.</td>
 	</tr>
 	<tr class="sjtable">
-		<td id="td-sj1d" class="cat1 sjtable sjitem kill">Izual</td>
-		<td id="td-sj2d" class="cat2 sjtable sjitem kill">Skeleton King<br />(Hard, level 60+)</td>
-		<td id="td-sj3d" class="cat3 sjtable sjitem kill">Siegebreaker<br />(Master, level 70+)</td>
-		<td id="td-sj4d" class="cat4 sjtable sjitem kill">Ghom<br />(T4, level 70)</td>
-		<td id="td-sj5d" class="cat5 sjtable sjitem kill">Butcher<br />(T7)</td>
-		<td id="td-sj6d" class="cat6 sjtable sjitem kill">Azmodan<br />(T10)</td>
-		<td id="td-sj7d" class="cat7 sjtable sjitem kill">Malthael<br />(T13)</td>
+		<td id="td-sj1d" class="cat1 sjtable sjitem kill">Maghda</td>
+		<td id="td-sj2d" class="cat2 sjtable sjitem kill">Kulle<br />(Hard, level 60+)</td>
+		<td id="td-sj3d" class="cat3 sjtable sjitem kill">Skeleton King<br />(Master, level 70+)</td>
+		<td id="td-sj4d" class="cat4 sjtable sjitem kill">Butcher<br />(T4, level 70)</td>
+		<td id="td-sj5d" class="cat5 sjtable sjitem kill">Malthael<br />(T7)</td>
+		<td id="td-sj6d" class="cat6 sjtable sjitem kill">Ghom<br />(T10)</td>
+		<td id="td-sj7d" class="cat7 sjtable sjitem kill">Rakanoth<br />(T13)</td>
 		<td id="td-sj8d" class="cat8 sjtable sjitem kill">Greed (T13)</td>
 		<td class="sjtable empty"></td>
 	</tr>
@@ -200,7 +199,7 @@
 		<td id="td-sj3h" class="cat3 sjtable sjitem bounties">Act II<br />bounty cache</td>
 		<td id="td-sj4h" class="cat4 sjtable sjitem ubers">Keywarden<br />Act 2 (T4)</td>
 		<td id="td-sj5h" class="cat5 sjtable sjitem setdung">Complete a<br />Set Dungeon</td>
-		<td id="td-sj6h" class="cat6 sjtable sjitem setdung">Complete an<br />Echoing NM</td>
+		<td id="td-sj6h" class="cat6 sjtable sjitem echoing">Complete an<br />Echoing NM</td>
 		<td id="td-sj7h" class="cat7 sjtable sjitem conquests">Complete<br />1 conquest</td>
 		<td id="td-sj8h" class="cat8 sjtable sjitem conquests">Complete<br />2 conquests</td>
 		<td id="td-sj9h" class="cat9 sjtable sjitem conquests">Complete<br />3 conquests</td>
@@ -252,8 +251,8 @@
 	<tr class="sjtable">
 		<td id="td-sj1m" class="cat1 sjtable rewards current">(No reward)</td>
 		<td id="td-sj2m" class="cat2 sjtable rewards">1<sup>st</sup> Haedrig<br />(head+hands)<br />transmog (lvl 70)</td>
-		<td id="td-sj3m" class="cat3 sjtable rewards">2<sup>nd</sup> Haedrig<br />(feet+shoulders;<br />monk: neck+sh.)</td>
-		<td id="td-sj4m" class="cat4 sjtable rewards">3<sup>rd</sup> Haedrig,<br /><a href="http://diablo.wikia.com/wiki/Blaine%27s_Bear" target="_blank">Blaine’s Bear</a>,<br />portrait frame</td>
+		<td id="td-sj3m" class="cat3 sjtable rewards">2<sup>nd</sup> Haedrig<br />(feet+shoulders;<br />barb: feet+belt<br />DH: feet+ring)</td>
+		<td id="td-sj4m" class="cat4 sjtable rewards">3<sup>rd</sup> Haedrig,<br />Wings of Lempo,<br />portrait frame</td>
 		<td id="td-sj5m" class="cat5 sjtable rewards">Portrait<br />frame</td>
 		<td id="td-sj6m" class="cat6 sjtable rewards">Portrait<br />frame</td>
 		<td id="td-sj7m" class="cat7 sjtable rewards">Portrait<br />frame</td>
@@ -279,22 +278,24 @@
 
 <br /><br />
 
+<span class="subtitle">Looking for guides? Check out <a href="https://diabloseasons.com/" target="_blank">DiabloSeasons.com</a> for starting tips and <a href="https://discordapp.com/invite/fUUqmzv" target="_blank">channel #d3planner on sVr's Discord</a> for links to all relevant builds!</span>
+
 <div id="bottomdiv">
 	Haedrig's Gift contains the following class sets this season:
 	<br />
-	Barbarian: <a href="https://us.battle.net/d3/en/item/eyes-of-the-earth-Unique_Helm_Set_15_x1" target="_blank">Might of the Earth</a> - 
-	Crusader: <a href="https://us.battle.net/d3/en/item/crown-of-the-invoker-Unique_Helm_Set_12_x1" target="_blank">Thorns of the Invoker</a> - 
-	Demon Hunter: <a href="https://us.battle.net/d3/en/item/the-shadows-mask-Unique_Helm_Set_14_x1" target="_blank">The Shadow's Mantle</a>
+	Barbarian: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Immortal King's Call</a> - 
+	Crusader: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Seeker of the Light</a> - 
+	Demon Hunter: <a href="https://us.battle.net/d3/en/item/natalyas-sight-Unique_Helm_009_x1" target="_blank">Natalya's Vengeance</a>
 	<br />
-	Monk: <a href="https://us.battle.net/d3/en/item/sunwukos-crown-Unique_Helm_Set_11_x1" target="_blank">Monkey King's Garb</a> - 
-	Witch Doctor: <a href="https://us.battle.net/d3/en/item/jade-harvesters-wisdom-Unique_Helm_Set_09_x1" target="_blank">Raiment of the Jade Harvester</a> - 
-	Wizard: <a href="https://us.battle.net/d3/en/item/firebirds-plume-Unique_Helm_Set_06_x1" target="_blank">Firebird's Finery</a>
+	Monk: <a href="https://eu.battle.net/d3/en/item/ulianas-spirit-Unique_Helm_Set_01_p3" target="_blank">Uliana's Stratagem</a> - 
+	Witch Doctor: <a href="https://eu.battle.net/d3/en/item/arachyrs-visage-Unique_Helm_Set_02_p3" target="_blank">Spirit of Arachyr</a> - 
+	Wizard: <a href="https://us.battle.net/d3/en/item/vyrs-sightless-skull-Unique_Helm_Set_13_x1" target="_blank">Vyr's Amazing Arcana</a>
 	<br />
-	Necromancer: <a href="https://us.battle.net/d3/en/item/inariuss-understanding-P6_Necro_Set_3_Helm" target="_blank">Grace of Inarius</a>
+	Necromancer: <a href="https://us.battle.net/d3/en/item/tragouls-guise-P6_Necro_Set_2_Helm" target="_blank">Trag'Oul's Guise</a>
 	<br /><br /><br />
-	<span class="button bigger" id="resetall">Reset all</span>&nbsp;&nbsp;&nbsp;
+<!--	<span class="button bigger" id="resetall">Reset all</span>&nbsp;&nbsp;&nbsp;
 	<span class="button bigger" id="shareprogress">Share progress</span>
-	<br /><br /><br />
+	<br /><br /><br />-->
 	<?php include('../footer.php')?>
 </div>
 
@@ -532,6 +533,10 @@ $('td.sjitem').click(function(event) {
 	} else if(sjid === 'td-sj3b' && status === 'not') {
 		unsetSJ('5', 'f');
 	
+	// set dungeons
+	} else if(sjid === 'td-sj6h' && status === 'done') {
+		setSJ('5', 'h');
+	
 	// conquests
 	} else if(sjid === 'td-sj9h' && status === 'done') {
 		setSJ('7', 'h'); setSJ('8', 'h');
@@ -570,23 +575,25 @@ $('td.conqitem').click(function(event) {
 	else if($('.conqitem.done').length == 2) { setSJ('7', 'h'); setSJ('8', 'h'); unsetSJ('9', 'h'); }
 	else if($('.conqitem.done').length > 2) { setSJ('7', 'h'); setSJ('8', 'h'); setSJ('9', 'h'); }
 
+	/*
 	// if gr45 w/o sets check solo grs
-	if(conqid === 'conq-a' || conqid === 'conq-f') {
-		if($('#conq-a').hasClass('done') || $('#conq-f').hasClass('done')) {
+	if(conqid === 'conq-c' || conqid === 'conq-h') {
+		if($('#conq-c').hasClass('done') || $('#conq-h').hasClass('done')) {
 			setSJ('4', 'b'); setSJ('5', 'b'); setSJ('6', 'b');
 		}
 	}
+	*/
 
-/*
+	/*
 	// sprinter checks first two bosses
-	if(conqid === 'conq-a' || conqid === 'conq-f') {
-		if($('#conq-a').hasClass('done') || $('#conq-f').hasClass('done')) {
+	if(conqid === 'conq-e' || conqid === 'conq-j') {
+		if($('#conq-e').hasClass('done') || $('#conq-j').hasClass('done')) {
 			setSJ('1', 'c'); setSJ('1', 'd');
 		}
 	}
-*/
+	*/
 
-/*
+	/*
 	// all but avarice conquests require max level
 	if(conqid != 'conq-a' && conqid != 'conq-f') {
 		if(status === 'done') {
@@ -597,33 +604,32 @@ $('td.conqitem').click(function(event) {
 			setSJ('1', 'a');
 		}
 	}
-*/
+	*/
 
 /*
 	// speed demon checks first 6 rifts
-	if(conqid === 'conq-b' || conqid === 'conq-g') {
-		if($('#conq-b').hasClass('done') || $('#conq-g').hasClass('done')) {
+	if(conqid === 'conq-a' || conqid === 'conq-f') {
+		if($('#conq-a').hasClass('done') || $('#conq-f').hasClass('done')) {
 			setSJ('1', 'a'); setSJ('2', 'a'); setSJ('3', 'a'); setSJ('4', 'a'); setSJ('5', 'a'); setSJ('6', 'a');
 		}
 	}
 */
 	
 	// boss mode checks most of the bosses
-	if(conqid === 'conq-c' || conqid === 'conq-h') {
-		if($('#conq-c').hasClass('done') || $('#conq-h').hasClass('done')) {
+	if(conqid === 'conq-a' || conqid === 'conq-f') {
+		if($('#conq-a').hasClass('done') || $('#conq-f').hasClass('done')) {
 			setSJ('1', 'c'); setSJ('1', 'd'); setSJ('2', 'c'); setSJ('2', 'd'); setSJ('3', 'c'); setSJ('3', 'd'); setSJ('4', 'c'); setSJ('4', 'd'); setSJ('5', 'c'); setSJ('5', 'd'); setSJ('6', 'c'); setSJ('6', 'd');
 		}
 	}
 
-/*
+
 	// if gr75 check solo grs + rift
-	if(conqid === 'conq-d' || conqid === 'conq-i') {
-		if($('#conq-d').hasClass('done') || $('#conq-i').hasClass('done')) {
+	if(conqid === 'conq-b' || conqid === 'conq-g') {
+		if($('#conq-b').hasClass('done') || $('#conq-g').hasClass('done')) {
 			setSJ('4', 'b'); setSJ('5', 'b'); setSJ('6', 'b'); setSJ('7', 'b'); setSJ('8', 'b'); setSJ('9', 'b'); setSJ('1', 'a');
 		}
 	}
-*/
-	
+
 	checkComplete();
 });
 
@@ -638,30 +644,11 @@ $('span.categories').click(function(event) {
 });
 
 
-// Helper: format a nice date string (uses user's locale)
-function formatDate(d) {
-    try {
-        return new Intl.DateTimeFormat(undefined, {
-        year: 'numeric', month: 'long', day: 'numeric',
-        weekday: 'long'
-        }).format(d);
-    } catch (e) {
-        // Fallback
-        return d.toDateString();
-    }
-}
-
 // countdown from https://www.w3schools.com/howto/howto_js_countdown.asp
 // Set the date we're counting down to
 const countDownDateNA   = atLocalTimeInZone(seasonDate, 'America/Los_Angeles');
 const countDownDateEU   = atLocalTimeInZone(seasonDate, 'Europe/Paris');
 const countDownDateAsia = atLocalTimeInZone(seasonDate, 'Asia/Seoul');
-
-// After the *latest* start + 7 days, we show the "started a while ago" message
-const LATEST_START = Math.max(countDownDateNA, countDownDateEU, countDownDateAsia);
-const ONE_WEEK_MS  = 7 * 24 * 60 * 60 * 1000;
-const REPLACE_AT   = LATEST_START + ONE_WEEK_MS;
-const printedStartDate = formatDate(new Date(LATEST_START));
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -669,25 +656,6 @@ var x = setInterval(function() {
 	// Get todays date and time
 	var now = new Date().getTime();
 
-
-    // If a week has passed since the last region started, replace whole block
-    if (now >= REPLACE_AT && startOrEnd == "STARTED") {
-        var container = document.getElementById('countdowndiv');
-        if (container) {
-        container.outerHTML =
-            `<div id="countdowndiv">
-            <div>
-                The season started a while ago (on ${printedStartDate}), it will last approximately 90 days
-                but could also be shorter or even as long as 4 months (see the
-                <a href="https://d3resource.com/seasons/index.php" target="_blank" rel="noopener">seasons overview</a>
-                for duration of the last few seasons).
-            </div>
-            </div>`;
-        }
-        clearInterval(x);
-        return;
-    }
-    
 	// Find the distance between now an the count down date
 	var distanceNA = countDownDateNA - now;
 	if (distanceNA < 0) {
