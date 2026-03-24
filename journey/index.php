@@ -53,52 +53,52 @@
 </div>
 
 <div id="conqdiv" class="hidden">
-<p>List of conquests in Season 38:</p>
+<p>List of conquests in Season 26:</p>
 <table class="conqtablelayout">
 	<tr>
 		<td class="conqlabel">Softcore:</td>
 		<td id="conq-a" class="conqitem">
-			<span class="conqtitle">Boss Mode</span><br />
-			<span class="conqdesc">All bosses in 20m on TX</span>
+			<span class="conqtitle">Avarice</span><br />
+			<span class="conqdesc">50m gold streak</span>
 		</td>
-		<td id="conq-b" class="conqitem soloconq">
-			<span class="conqtitle">Curses!</span><br />
-			<span class="conqdesc">350 kills TX Cursed Chest</span>
+		<td id="conq-b" class="conqitem">
+			<span class="conqtitle">Speed Demon</span><br />
+			<span class="conqdesc">TX in under 2 mins</span>
 		</td>
 		<td id="conq-c" class="conqitem">
+			<span class="conqtitle">On a Good Day</span><br />
+			<span class="conqdesc">3 gems to 65</span>
+		</td>
+		<td id="conq-d" class="conqitem">
 			<span class="conqtitle">Divinity</span><br />
 			<span class="conqdesc">GR75 solo</span>
 		</td>
-		<td id="conq-d" class="conqitem gemconq">
+		<td id="conq-e" class="conqitem">
 			<span class="conqtitle">Years of War</span><br />
-			<span class="conqdesc">GR55 solo with 6 sets</span>
-		</td>
-		<td id="conq-e" class="conqitem soloconq">
-			<span class="conqtitle">Masters of the Universe</span><br />
-			<span class="conqdesc">Master 8 set dungeons</span>
+			<span class="conqdesc">GR55 with 6 sets</span>
 		</td>
 	</tr>
 	<tr>
 		<td class="conqlabel">Hardcore:</td>
 		<td id="conq-f" class="conqitem">
-			<span class="conqtitle">Worlds Apart</span><br />
-			<span class="conqdesc">All bosses in 20m on TX</span>
+			<span class="conqtitle">Avaritia</span><br />
+			<span class="conqdesc">50m gold streak</span>
 		</td>
-		<td id="conq-g" class="conqitem soloconq">
-			<span class="conqtitle">Stars Align</span><br />
-			<span class="conqdesc">350 kills TX Cursed Chest</span>
+		<td id="conq-g" class="conqitem">
+			<span class="conqtitle">Need for Speed</span><br />
+			<span class="conqdesc">TX in under 2 mins</span>
 		</td>
 		<td id="conq-h" class="conqitem">
+			<span class="conqtitle">I Can't Stop</span><br />
+			<span class="conqdesc">3 gems to 65</span>
+		</td>
+		<td id="conq-i" class="conqitem">
 			<span class="conqtitle">Lionhearted</span><br />
 			<span class="conqdesc">GR75 solo</span>
 		</td>
-		<td id="conq-i" class="conqitem gemconq">
+		<td id="conq-j" class="conqitem">
 			<span class="conqtitle">Dynasty</span><br />
-			<span class="conqdesc">GR55 solo with 6 sets</span>
-		</td>
-		<td id="conq-j" class="conqitem soloconq">
-			<span class="conqtitle">Masters of Sets</span><br />
-			<span class="conqdesc">Master 8 set dungeons</span>
+			<span class="conqdesc">GR55 with 6 sets</span>
 		</td>
 	</tr>
 </table>
@@ -139,24 +139,24 @@
 		<td id="td-sj9b" class="cat9 sjtable sjitem solo">GR70 solo</td>
 	</tr>
 	<tr class="sjtable">
-		<td id="td-sj1c" class="cat1 sjtable sjitem kill">Siegebreaker</td>
-		<td id="td-sj2c" class="cat2 sjtable sjitem kill">Azmodan<br />(Hard, level 60+)</td>
-		<td id="td-sj3c" class="cat3 sjtable sjitem kill">Urzael<br />(Master, level 70+)</td>
-		<td id="td-sj4c" class="cat4 sjtable sjitem kill">Adria<br />(T2, level 70)</td>
-		<td id="td-sj5c" class="cat5 sjtable sjitem kill">Cydaea<br />(T7)</td>
-		<td id="td-sj6c" class="cat6 sjtable sjitem kill">Diablo<br />(T10)</td>
-		<td id="td-sj7c" class="cat7 sjtable sjitem kill">Aranaea<br />(T13)</td>
-		<td id="td-sj8c" class="cat8 sjtable sjitem kill">Izual<br />in under 15 sec.</td>
-		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Belial<br />in under 60 sec.</td>
+		<td id="td-sj1c" class="cat1 sjtable sjitem kill">Zoltun Kulle</td>
+		<td id="td-sj2c" class="cat2 sjtable sjitem kill">Ghom<br />(Hard, level 60+)</td>
+		<td id="td-sj3c" class="cat3 sjtable sjitem kill">Belial<br />(Master, level 70+)</td>
+		<td id="td-sj4c" class="cat4 sjtable sjitem kill">Azmodan<br />(T2, level 70)</td>
+		<td id="td-sj5c" class="cat5 sjtable sjitem kill">Urzael<br />(T7)</td>
+		<td id="td-sj6c" class="cat6 sjtable sjitem kill">Skeleton King<br />(T10)</td>
+		<td id="td-sj7c" class="cat7 sjtable sjitem kill">Izual<br />(T13)</td>
+		<td id="td-sj8c" class="cat8 sjtable sjitem kill">Butcher (T13)<br />in under 30 sec.</td>
+		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Siegebreaker (T13)<br />in under 15 sec.</td>
 	</tr>
 	<tr class="sjtable">
-		<td id="td-sj1d" class="cat1 sjtable sjitem kill">Maghda</td>
-		<td id="td-sj2d" class="cat2 sjtable sjitem kill">Kulle<br />(Hard, level 60+)</td>
-		<td id="td-sj3d" class="cat3 sjtable sjitem kill">Skeleton King<br />(Master, level 70+)</td>
-		<td id="td-sj4d" class="cat4 sjtable sjitem kill">Butcher<br />(T4, level 70)</td>
-		<td id="td-sj5d" class="cat5 sjtable sjitem kill">Malthael<br />(T7)</td>
-		<td id="td-sj6d" class="cat6 sjtable sjitem kill">Ghom<br />(T10)</td>
-		<td id="td-sj7d" class="cat7 sjtable sjitem kill">Rakanoth<br />(T13)</td>
+		<td id="td-sj1d" class="cat1 sjtable sjitem kill">Rakanoth</td>
+		<td id="td-sj2d" class="cat2 sjtable sjitem kill">Aranaea<br />(Hard, level 60+)</td>
+		<td id="td-sj3d" class="cat3 sjtable sjitem kill">Maghda<br />(Master, level 70+)</td>
+		<td id="td-sj4d" class="cat4 sjtable sjitem kill">Adria<br />(T4, level 70)</td>
+		<td id="td-sj5d" class="cat5 sjtable sjitem kill">Cydaea<br />(T7)</td>
+		<td id="td-sj6d" class="cat6 sjtable sjitem kill">Diablo<br />(T10)</td>
+		<td id="td-sj7d" class="cat7 sjtable sjitem kill">Malthael<br />(T13)</td>
 		<td id="td-sj8d" class="cat8 sjtable sjitem kill">Greed (T13)</td>
 		<td class="sjtable empty"></td>
 	</tr>
@@ -199,7 +199,7 @@
 		<td id="td-sj3h" class="cat3 sjtable sjitem bounties">Act II<br />bounty cache</td>
 		<td id="td-sj4h" class="cat4 sjtable sjitem ubers">Keywarden<br />Act 2 (T4)</td>
 		<td id="td-sj5h" class="cat5 sjtable sjitem setdung">Complete a<br />Set Dungeon</td>
-		<td id="td-sj6h" class="cat6 sjtable sjitem echoing">Complete an<br />Echoing NM</td>
+		<td id="td-sj6h" class="cat6 sjtable sjitem setdung">Complete an<br />Echoing NM</td>
 		<td id="td-sj7h" class="cat7 sjtable sjitem conquests">Complete<br />1 conquest</td>
 		<td id="td-sj8h" class="cat8 sjtable sjitem conquests">Complete<br />2 conquests</td>
 		<td id="td-sj9h" class="cat9 sjtable sjitem conquests">Complete<br />3 conquests</td>
@@ -251,8 +251,8 @@
 	<tr class="sjtable">
 		<td id="td-sj1m" class="cat1 sjtable rewards current">(No reward)</td>
 		<td id="td-sj2m" class="cat2 sjtable rewards">1<sup>st</sup> Haedrig<br />(head+hands)<br />transmog (lvl 70)</td>
-		<td id="td-sj3m" class="cat3 sjtable rewards">2<sup>nd</sup> Haedrig<br />(feet+shoulders;<br />barb: feet+belt<br />DH: feet+ring)</td>
-		<td id="td-sj4m" class="cat4 sjtable rewards">3<sup>rd</sup> Haedrig,<br />Wings of Lempo,<br />portrait frame</td>
+		<td id="td-sj3m" class="cat3 sjtable rewards">2<sup>nd</sup> Haedrig<br />(feet+shoulders;<br />WD+crus: feet+X)</td>
+		<td id="td-sj4m" class="cat4 sjtable rewards">3<sup>rd</sup> Haedrig,<br />pennant,<br />portrait frame</td>
 		<td id="td-sj5m" class="cat5 sjtable rewards">Portrait<br />frame</td>
 		<td id="td-sj6m" class="cat6 sjtable rewards">Portrait<br />frame</td>
 		<td id="td-sj7m" class="cat7 sjtable rewards">Portrait<br />frame</td>
@@ -283,22 +283,20 @@
 <div id="bottomdiv">
 	Haedrig's Gift contains the following class sets this season:
 	<br />
-	Barbarian: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Immortal King's Call</a> - 
-	Crusader: <a href="https://us.battle.net/d3/en/item/immortal-kings-triumph-Unique_Helm_008_x1" target="_blank">Seeker of the Light</a> - 
-	Demon Hunter: <a href="https://us.battle.net/d3/en/item/natalyas-sight-Unique_Helm_009_x1" target="_blank">Natalya's Vengeance</a>
+	Barbarian: <a href="https://us.diablo3.com/en/item/raekors-heart-Unique_Chest_Set_05_x1" target="_blank">The Legacy of Raekor</a> - 
+	Crusader: <a href="https://us.diablo3.com/en/item/breastplate-of-akkhan-Unique_Chest_Set_10_x1" target="_blank">Armor of Akkhan</a> - 
+	Demon Hunter: <a href="https://us.diablo3.com/en/item/marauders-carapace-Unique_Chest_Set_07_x1" target="_blank">Embodiment of the Marauder</a>
 	<br />
-	Monk: <a href="https://eu.battle.net/d3/en/item/ulianas-spirit-Unique_Helm_Set_01_p3" target="_blank">Uliana's Stratagem</a> - 
-	Witch Doctor: <a href="https://eu.battle.net/d3/en/item/arachyrs-visage-Unique_Helm_Set_02_p3" target="_blank">Spirit of Arachyr</a> - 
-	Wizard: <a href="https://us.battle.net/d3/en/item/vyrs-sightless-skull-Unique_Helm_Set_13_x1" target="_blank">Vyr's Amazing Arcana</a>
+	Monk: <a href="https://us.diablo3.com/en/item/innas-vast-expanse-Unique_Chest_015_x1" target="_blank">Inna's Mantra</a> - 
+	Witch Doctor: <a href="https://us.diablo3.com/en/item/zunimassas-marrow-Unique_Chest_016_x1" target="_blank">Zunimassa's Haunt</a> - 
+	Wizard: <a href="https://us.diablo3.com/en/item/harness-of-truth-Unique_Chest_Set_02_p2" target="_blank">Delsere's Magnum Opus</a>
 	<br />
-	Necromancer: <a href="https://us.battle.net/d3/en/item/tragouls-guise-P6_Necro_Set_2_Helm" target="_blank">Trag'Oul's Guise</a>
+	Necromancer: <a href="https://us.diablo3.com/en/item/pestilence-mask-P6_Necro_Set_4_Helm" target="_blank">Pestilence Master's Shroud</a>
 	<br /><br /><br />
-<!--	<span class="button bigger" id="resetall">Reset all</span>&nbsp;&nbsp;&nbsp;
+	<span class="button bigger" id="resetall">Reset all</span>&nbsp;&nbsp;&nbsp;
 	<span class="button bigger" id="shareprogress">Share progress</span>
-	<br /><br /><br />-->
+	<br /><br /><br />
 	<?php include('../footer.php')?>
-</div>
-
 </div>
 
 <!-- confirmation dialogs -->
