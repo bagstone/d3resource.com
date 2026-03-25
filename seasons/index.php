@@ -237,11 +237,11 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s31"><a href="https://news.blizzard.com/en-us/diablo3/24078323/season-31-season-of-the-forbidden-archives-preview" target="_blank">2.7.7</a></td>
 		<td class="difftable col-s32"><a href="https://us.diablo3.blizzard.com/en-us/blog/24104599/season-32-ethereal-memory-preview-6-28-2024" target="_blank">2.7.7</a></td>
 		<td class="difftable col-s33"><a href="https://news.blizzard.com/en-us/diablo3/24137819/season-33-shades-of-the-nephalem-preview" target="_blank">2.7.8</a></td>
-		<td class="difftable col-s34"><a href="https://news.blizzard.com/en-us/article/24166297/season-34-lights-calling-preview" target="_blank">2.7.8</a></td>
-		<td class="difftable col-s35"><a href="https://news.blizzard.com/en-us/article/24191146/season-35-eternal-conflict-preview" target="_blank">2.7.8</a></td>
-		<td class="difftable col-s36"><a href="https://news.blizzard.com/en-gb/article/24231417/season-36-the-lords-of-hell-preview" target="_blank">2.7.8</a></td>
-		<td class="difftable col-s37"><a href="https://news.blizzard.com/en-us/article/24243442/season-37-the-forbidden-archives-preview" target="_blank">2.7.8</a></td>
-		<td class="difftable col-s38"><a href="https://news.blizzard.com/en-us/article/24262572/season-38-ethereal-memory-preview" target="_blank">2.7.8</a></td>
+		<td class="difftable col-s34"><a href="https://news.blizzard.com/en-us/article/24166297/season-34-lights-calling-preview" target="_blank">2.8.0</a></td>
+		<td class="difftable col-s35"><a href="https://news.blizzard.com/en-us/article/24191146/season-35-eternal-conflict-preview" target="_blank">2.8.0</a></td>
+		<td class="difftable col-s36"><a href="https://news.blizzard.com/en-gb/article/24231417/season-36-the-lords-of-hell-preview" target="_blank">2.8.0</a></td>
+		<td class="difftable col-s37"><a href="https://news.blizzard.com/en-us/article/24243442/season-37-the-forbidden-archives-preview" target="_blank">2.8.0</a></td>
+		<td class="difftable col-s38"><a href="https://news.blizzard.com/en-us/article/24262572/season-38-ethereal-memory-preview" target="_blank">2.8.0</a></td>
 		<td class="difftable right">Patch</td>
 	</tr>
 	<tr class="difftable">
@@ -943,7 +943,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s23">Pet:<br /><small>Lacuni Cub</small></td>
 		<td class="difftable col-s24">Pet: Lesser<br /><small>Mummy Pet</small></td>
 		<td class="difftable col-s25">Pet: Dark<br />Lordling</td>
-		<td class="difftable col-s26">Pet: Tooths.<br />Trooper<</td>
+		<td class="difftable col-s26">Pet: Tooths.<br />Trooper</td>
 		<td class="difftable col-s27">Pet: Corvus<br />Cadav.</td>
 		<td class="difftable col-s28">Pet: Taenin<br />the Tiny</td>
 		<td class="difftable col-s29">Pet: Quoth</td>
@@ -955,7 +955,7 @@ if(isset($_GET['2'])) {
 		<td class="difftable col-s35">Pet:<br /><small>Lacuni Cub</small></td>
 		<td class="difftable col-s36">Pet: Lesser<br /><small>Mummy Pet</small></td>
 		<td class="difftable col-s37">Pet:<br />Blaine's Bear</td>
-		<td class="difftable col-s38">Pet: Tooths.<br />Trooper<</td>
+		<td class="difftable col-s38">Pet: Tooths.<br />Trooper</td>
 		<td class="difftable right">Reward:<br />Cosmetic</td>
 	</tr>
 	<!--
