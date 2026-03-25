@@ -120,7 +120,7 @@
 		<td id="td-sj1a" class="cat1 sjtable sjitem rift">Normal Rift</td>
 		<td id="td-sj2a" class="cat2 sjtable sjitem rift">Expert Rift</td>
 		<td id="td-sj3a" class="cat3 sjtable sjitem rift">Master Rift</td>
-		<td id="td-sj4a" class="cat4 sjtable sjitem rift">T1 Rift</td>
+		<td id="td-sj4a" class="cat4 sjtable sjitem rift">T1 Rift<br />(Level 70)</td>
 		<td id="td-sj5a" class="cat5 sjtable sjitem rift">T5 Rift</td>
 		<td id="td-sj6a" class="cat6 sjtable sjitem rift">T10 Rift in<br />under 6 minutes</td>
 		<td id="td-sj7a" class="cat7 sjtable sjitem rift">T12 Rift in<br />under 6 minutes</td>
