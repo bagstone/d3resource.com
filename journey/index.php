@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Diablo 3: Season 38 Journey Tracker</title>
+	<title>Diablo 3: Season 39 Journey Tracker</title>
 <!--	<script src="http://us.battle.net/d3/static/js/tooltips.js"></script> -->
 	<script src="/_script/jquery-3.0.0.min.js"></script>
 	<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
@@ -17,10 +17,10 @@
 
 <div id="maindiv">
 
-<h1>Diablo 3: Season 38 Journey Tracker</h1>
+<h1>Diablo 3: Season 39 Journey Tracker</h1>
 
 <script>
-	var seasonDate = '2026-03-27';
+	var seasonDate = '2026-06-26';
 	var startOrEnd = 'STARTED';
 </script>
 <div id="countdowndiv">
@@ -53,7 +53,7 @@
 </div>
 
 <div id="conqdiv" class="hidden">
-<p>List of conquests in Season 26:</p>
+<p>List of conquests in Season 39:</p>
 <table class="conqtablelayout">
 	<tr>
 		<td class="conqlabel">Softcore:</td>
@@ -62,20 +62,20 @@
 			<span class="conqdesc">50m gold streak</span>
 		</td>
 		<td id="conq-b" class="conqitem">
-			<span class="conqtitle">Speed Demon</span><br />
-			<span class="conqdesc">TX in under 2 mins</span>
+			<span class="conqtitle">Boss Mode</span><br />
+			<span class="conqdesc">All bosses in 20m on TX</span>
 		</td>
 		<td id="conq-c" class="conqitem">
-			<span class="conqtitle">On a Good Day</span><br />
-			<span class="conqdesc">3 gems to 65</span>
+			<span class="conqtitle">The Thrill</span><br />
+			<span class="conqdesc">GR45 w/o set items</span>
 		</td>
 		<td id="conq-d" class="conqitem">
-			<span class="conqtitle">Divinity</span><br />
-			<span class="conqdesc">GR75 solo</span>
+			<span class="conqtitle">Masters of the Univ.</span><br />
+			<span class="conqdesc">Master 8 set dungeons</span>
 		</td>
 		<td id="conq-e" class="conqitem">
-			<span class="conqtitle">Years of War</span><br />
-			<span class="conqdesc">GR55 with 6 sets</span>
+			<span class="conqtitle">Sprinter</span><br />
+			<span class="conqdesc">Campaign in 1 hour</span>
 		</td>
 	</tr>
 	<tr>
@@ -85,20 +85,20 @@
 			<span class="conqdesc">50m gold streak</span>
 		</td>
 		<td id="conq-g" class="conqitem">
-			<span class="conqtitle">Need for Speed</span><br />
-			<span class="conqdesc">TX in under 2 mins</span>
+			<span class="conqtitle">Worlds Apart</span><br />
+			<span class="conqdesc">All bosses in 20m on TX</span>
 		</td>
 		<td id="conq-h" class="conqitem">
-			<span class="conqtitle">I Can't Stop</span><br />
-			<span class="conqdesc">3 gems to 65</span>
+			<span class="conqtitle">Superhuman</span><br />
+			<span class="conqdesc">GR45 w/o set items</span>
 		</td>
 		<td id="conq-i" class="conqitem">
-			<span class="conqtitle">Lionhearted</span><br />
-			<span class="conqdesc">GR75 solo</span>
+			<span class="conqtitle">Masters of Sets</span><br />
+			<span class="conqdesc">Master 8 set dungeons</span>
 		</td>
 		<td id="conq-j" class="conqitem">
-			<span class="conqtitle">Dynasty</span><br />
-			<span class="conqdesc">GR55 with 6 sets</span>
+			<span class="conqtitle">Speed Racer</span><br />
+			<span class="conqdesc">Campaign in 1 hour</span>
 		</td>
 	</tr>
 </table>
@@ -139,24 +139,24 @@
 		<td id="td-sj9b" class="cat9 sjtable sjitem solo">GR70 solo</td>
 	</tr>
 	<tr class="sjtable">
-		<td id="td-sj1c" class="cat1 sjtable sjitem kill">Zoltun Kulle</td>
-		<td id="td-sj2c" class="cat2 sjtable sjitem kill">Ghom<br />(Hard, level 60+)</td>
-		<td id="td-sj3c" class="cat3 sjtable sjitem kill">Belial<br />(Master, level 70+)</td>
-		<td id="td-sj4c" class="cat4 sjtable sjitem kill">Azmodan<br />(T2, level 70)</td>
-		<td id="td-sj5c" class="cat5 sjtable sjitem kill">Urzael<br />(T7)</td>
-		<td id="td-sj6c" class="cat6 sjtable sjitem kill">Skeleton King<br />(T10)</td>
-		<td id="td-sj7c" class="cat7 sjtable sjitem kill">Izual<br />(T13)</td>
-		<td id="td-sj8c" class="cat8 sjtable sjitem kill">Butcher (T13)<br />in under 30 sec.</td>
-		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Siegebreaker (T13)<br />in under 15 sec.</td>
+		<td id="td-sj1c" class="cat1 sjtable sjitem kill">Siegebreaker</td>
+		<td id="td-sj2c" class="cat2 sjtable sjitem kill">Belial<br />(Hard, level 60+)</td>
+		<td id="td-sj3c" class="cat3 sjtable sjitem kill">Skeleton King<br />(Master, level 70+)</td>
+		<td id="td-sj4c" class="cat4 sjtable sjitem kill">Urzael<br />(T2, level 70)</td>
+		<td id="td-sj5c" class="cat5 sjtable sjitem kill">Adria<br />(T7)</td>
+		<td id="td-sj6c" class="cat6 sjtable sjitem kill">Maghda<br />(T10)</td>
+		<td id="td-sj7c" class="cat7 sjtable sjitem kill">Araneae<br />(T13)</td>
+		<td id="td-sj8c" class="cat8 sjtable sjitem kill">Malthael (T13)<br />in under 90 sec.</td>
+		<td id="td-sj9c" class="cat9 sjtable sjitem kill">Zoltun Kulle<br />in under 10 sec.</td>
 	</tr>
 	<tr class="sjtable">
-		<td id="td-sj1d" class="cat1 sjtable sjitem kill">Rakanoth</td>
-		<td id="td-sj2d" class="cat2 sjtable sjitem kill">Aranaea<br />(Hard, level 60+)</td>
-		<td id="td-sj3d" class="cat3 sjtable sjitem kill">Maghda<br />(Master, level 70+)</td>
-		<td id="td-sj4d" class="cat4 sjtable sjitem kill">Adria<br />(T4, level 70)</td>
-		<td id="td-sj5d" class="cat5 sjtable sjitem kill">Cydaea<br />(T7)</td>
-		<td id="td-sj6d" class="cat6 sjtable sjitem kill">Diablo<br />(T10)</td>
-		<td id="td-sj7d" class="cat7 sjtable sjitem kill">Malthael<br />(T13)</td>
+		<td id="td-sj1d" class="cat1 sjtable sjitem kill">Butcher</td>
+		<td id="td-sj2d" class="cat2 sjtable sjitem kill">Cydaea<br />(Hard, level 60+)</td>
+		<td id="td-sj3d" class="cat3 sjtable sjitem kill">Ghom<br />(Master, level 70+)</td>
+		<td id="td-sj4d" class="cat4 sjtable sjitem kill">Rakanoth<br />(T4, level 70)</td>
+		<td id="td-sj5d" class="cat5 sjtable sjitem kill">Azmodan<br />(T7)</td>
+		<td id="td-sj6d" class="cat6 sjtable sjitem kill">Izual<br />(T10)</td>
+		<td id="td-sj7d" class="cat7 sjtable sjitem kill">Diablo<br />(T13)</td>
 		<td id="td-sj8d" class="cat8 sjtable sjitem kill">Greed (T13)</td>
 		<td class="sjtable empty"></td>
 	</tr>
@@ -251,13 +251,13 @@
 	<tr class="sjtable">
 		<td id="td-sj1m" class="cat1 sjtable rewards current">(No reward)</td>
 		<td id="td-sj2m" class="cat2 sjtable rewards">1<sup>st</sup> Haedrig<br />(head+hands)<br />transmog (lvl 70)</td>
-		<td id="td-sj3m" class="cat3 sjtable rewards">2<sup>nd</sup> Haedrig<br />(feet+shoulders;<br />WD+crus: feet+X)</td>
-		<td id="td-sj4m" class="cat4 sjtable rewards">3<sup>rd</sup> Haedrig,<br />pennant,<br />portrait frame</td>
+		<td id="td-sj3m" class="cat3 sjtable rewards">2<sup>nd</sup> Haedrig<br />(feet+shoulders;<br />wiz: belt+neck)</td>
+		<td id="td-sj4m" class="cat4 sjtable rewards">3<sup>rd</sup> Haedrig,<br />Belphegor (pet),<br />portrait frame</td>
 		<td id="td-sj5m" class="cat5 sjtable rewards">Portrait<br />frame</td>
 		<td id="td-sj6m" class="cat6 sjtable rewards">Portrait<br />frame</td>
 		<td id="td-sj7m" class="cat7 sjtable rewards">Portrait<br />frame</td>
 		<td id="td-sj8m" class="cat8 sjtable rewards">Stash tab,<br />portrait frame</td>
-		<td id="td-sj9m" class="cat9 sjtable rewards">Portrait<br />frame</td>
+		<td id="td-sj9m" class="cat9 sjtable rewards">Corvus pet,<br />Laurels portrait</td>
 	</tr>
 	<tr class="sjtable">
 		<td id="complete1" class="completion current">Current</td>
@@ -283,15 +283,15 @@
 <div id="bottomdiv">
 	Haedrig's Gift contains the following class sets this season:
 	<br />
-	Barbarian: <a href="https://us.diablo3.com/en/item/raekors-heart-Unique_Chest_Set_05_x1" target="_blank">The Legacy of Raekor</a> - 
-	Crusader: <a href="https://us.diablo3.com/en/item/breastplate-of-akkhan-Unique_Chest_Set_10_x1" target="_blank">Armor of Akkhan</a> - 
-	Demon Hunter: <a href="https://us.diablo3.com/en/item/marauders-carapace-Unique_Chest_Set_07_x1" target="_blank">Embodiment of the Marauder</a>
+	Barbarian: <a href="https://us.diablo3.com/en/item/helm-of-the-wastes-Unique_Helm_Set_01_p2" target="_blank">Wrath of the Wastes</a> - 
+	Crusader: <a href="https://us.diablo3.com/en/item/rolands-visage-Unique_Helm_Set_01_p1" target="_blank">Roland's Legacy</a> - 
+	Demon Hunter: <a href="https://us.diablo3.com/en/item/accursed-visage-Unique_Helm_Set_03_p2" target="_blank">Unhallowed Essence</a>
 	<br />
-	Monk: <a href="https://us.diablo3.com/en/item/innas-vast-expanse-Unique_Chest_015_x1" target="_blank">Inna's Mantra</a> - 
-	Witch Doctor: <a href="https://us.diablo3.com/en/item/zunimassas-marrow-Unique_Chest_016_x1" target="_blank">Zunimassa's Haunt</a> - 
-	Wizard: <a href="https://us.diablo3.com/en/item/harness-of-truth-Unique_Chest_Set_02_p2" target="_blank">Delsere's Magnum Opus</a>
+	Monk: <a href="https://us.diablo3.com/en/item/mask-of-the-searing-sky-Unique_Helm_Set_08_x1" target="_blank">Raiment of a Thousand Storms</a> - 
+	Witch Doctor: <a href="https://us.diablo3.com/en/item/helltooth-mask-Unique_Helm_Set_16_x1" target="_blank">Helltooth Harness</a> - 
+	Wizard: <a href="https://us.diablo3.com/en/item/tal-rashas-guise-of-wisdom-Unique_Helm_010_x1" target="_blank">Tal Rasha's Elements</a>
 	<br />
-	Necromancer: <a href="https://us.diablo3.com/en/item/pestilence-mask-P6_Necro_Set_4_Helm" target="_blank">Pestilence Master's Shroud</a>
+	Necromancer: <a href="https://us.diablo3.com/en/item/rathmas-skull-helm-P6_Necro_Set_1_Helm" target="_blank">Bones of Rathma</a>
 	<br /><br /><br />
 	<span class="button bigger" id="resetall">Reset all</span>&nbsp;&nbsp;&nbsp;
 	<span class="button bigger" id="shareprogress">Share progress</span>
@@ -573,58 +573,32 @@ $('td.conqitem').click(function(event) {
 	else if($('.conqitem.done').length == 2) { setSJ('7', 'h'); setSJ('8', 'h'); unsetSJ('9', 'h'); }
 	else if($('.conqitem.done').length > 2) { setSJ('7', 'h'); setSJ('8', 'h'); setSJ('9', 'h'); }
 
-	/*
 	// if gr45 w/o sets check solo grs
 	if(conqid === 'conq-c' || conqid === 'conq-h') {
 		if($('#conq-c').hasClass('done') || $('#conq-h').hasClass('done')) {
 			setSJ('4', 'b'); setSJ('5', 'b'); setSJ('6', 'b');
 		}
 	}
-	*/
 
-	/*
-	// sprinter checks first two bosses
+	// sprinter/speed racer checks first two bosses
 	if(conqid === 'conq-e' || conqid === 'conq-j') {
 		if($('#conq-e').hasClass('done') || $('#conq-j').hasClass('done')) {
 			setSJ('1', 'c'); setSJ('1', 'd');
 		}
 	}
-	*/
 
-	/*
-	// all but avarice conquests require max level
+	// all but avarice/avaritia require max level and at least a normal rift
 	if(conqid != 'conq-a' && conqid != 'conq-f') {
 		if(status === 'done') {
 			setSJ('1', 'b'); setSJ('2', 'b');
-		}
-		// all but avarice/sprinter (currently not on) require a normal rift at least
-		if(conqid != 'conq-a' && conqid != 'conq-f') {
 			setSJ('1', 'a');
 		}
 	}
-	*/
-
-/*
-	// speed demon checks first 6 rifts
-	if(conqid === 'conq-a' || conqid === 'conq-f') {
-		if($('#conq-a').hasClass('done') || $('#conq-f').hasClass('done')) {
-			setSJ('1', 'a'); setSJ('2', 'a'); setSJ('3', 'a'); setSJ('4', 'a'); setSJ('5', 'a'); setSJ('6', 'a');
-		}
-	}
-*/
 	
-	// boss mode checks most of the bosses
-	if(conqid === 'conq-a' || conqid === 'conq-f') {
-		if($('#conq-a').hasClass('done') || $('#conq-f').hasClass('done')) {
-			setSJ('1', 'c'); setSJ('1', 'd'); setSJ('2', 'c'); setSJ('2', 'd'); setSJ('3', 'c'); setSJ('3', 'd'); setSJ('4', 'c'); setSJ('4', 'd'); setSJ('5', 'c'); setSJ('5', 'd'); setSJ('6', 'c'); setSJ('6', 'd');
-		}
-	}
-
-
-	// if gr75 check solo grs + rift
+	// boss mode/worlds apart checks most of the bosses
 	if(conqid === 'conq-b' || conqid === 'conq-g') {
 		if($('#conq-b').hasClass('done') || $('#conq-g').hasClass('done')) {
-			setSJ('4', 'b'); setSJ('5', 'b'); setSJ('6', 'b'); setSJ('7', 'b'); setSJ('8', 'b'); setSJ('9', 'b'); setSJ('1', 'a');
+			setSJ('1', 'c'); setSJ('1', 'd'); setSJ('2', 'c'); setSJ('2', 'd'); setSJ('3', 'c'); setSJ('3', 'd'); setSJ('4', 'c'); setSJ('4', 'd'); setSJ('5', 'c'); setSJ('5', 'd'); setSJ('6', 'c'); setSJ('6', 'd');
 		}
 	}
 
