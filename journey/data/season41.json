@@ -1,0 +1,533 @@
+{
+  "number": 41,
+  "startDate": null,
+  "endDate": null,
+  "visibleFrom": null,
+  "chapters": [
+    "Chapter I",
+    "Chapter II",
+    "Chapter III",
+    "Chapter IV",
+    "Slayer",
+    "Champion",
+    "Destroyer",
+    "Conqueror",
+    "Guardian"
+  ],
+  "conquests": [
+    {
+      "mode": "Softcore",
+      "items": [
+        {
+          "title": "The Thrill",
+          "description": "GR45 w/o set items"
+        },
+        {
+          "title": "Avarice",
+          "description": "50m gold streak"
+        },
+        {
+          "title": "Sprinter",
+          "description": "Campaign in 1 hour"
+        },
+        {
+          "title": "Years of War",
+          "description": "GR55 with 6 sets"
+        },
+        {
+          "title": "Masters of the Universe",
+          "description": "Master 8 set dungeons"
+        }
+      ]
+    },
+    {
+      "mode": "Hardcore",
+      "items": [
+        {
+          "title": "Super Human",
+          "description": "GR45 w/o set items"
+        },
+        {
+          "title": "Avaritia",
+          "description": "50m gold streak"
+        },
+        {
+          "title": "Speed Racer",
+          "description": "Campaign in 1 hour"
+        },
+        {
+          "title": "Dynasty",
+          "description": "GR55 with 6 sets"
+        },
+        {
+          "title": "Masters of Sets",
+          "description": "Master 8 set dungeons"
+        }
+      ]
+    }
+  ],
+  "journeyRows": [
+    [
+      {
+        "classes": "sjitem rift",
+        "content": "Normal Rift"
+      },
+      {
+        "classes": "sjitem rift",
+        "content": "Expert Rift"
+      },
+      {
+        "classes": "sjitem rift",
+        "content": "Master Rift"
+      },
+      {
+        "classes": "sjitem rift",
+        "content": "T1 Rift"
+      },
+      {
+        "classes": "sjitem rift",
+        "content": "T5 Rift"
+      },
+      {
+        "classes": "sjitem rift",
+        "content": "T10 Rift in<br>under 6 minutes"
+      },
+      {
+        "classes": "sjitem rift",
+        "content": "T12 Rift in<br>under 6 minutes"
+      },
+      {
+        "classes": "sjitem rift",
+        "content": "T13 Rift in<br>under 5 minutes"
+      },
+      {
+        "classes": "sjitem rift",
+        "content": "T13 Rift in<br>under 4 minutes"
+      }
+    ],
+    [
+      {
+        "classes": "sjitem misc",
+        "content": "Level 50"
+      },
+      {
+        "classes": "sjitem misc",
+        "content": "Level 70"
+      },
+      {
+        "classes": "sjitem kadala",
+        "content": "Buy item<br>from Kadala"
+      },
+      {
+        "classes": "sjitem solo",
+        "content": "GR20 solo"
+      },
+      {
+        "classes": "sjitem solo",
+        "content": "GR30 solo"
+      },
+      {
+        "classes": "sjitem solo",
+        "content": "GR40 solo"
+      },
+      {
+        "classes": "sjitem solo",
+        "content": "GR50 solo"
+      },
+      {
+        "classes": "sjitem solo",
+        "content": "GR60 solo"
+      },
+      {
+        "classes": "sjitem solo",
+        "content": "GR70 solo"
+      }
+    ],
+    [
+      {
+        "classes": "sjitem kill",
+        "content": "Skeleton King"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Ghom<br>(Hard, level 60+)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Urzael<br>(Master, level 70+)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Zoltun Kulle<br>(T2, level 70)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Rakanoth<br>(T7)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Butcher<br>(T10)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Belial<br>(T13)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Diablo (T13)<br>in under 90 sec."
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Malthael (T13)<br>in under 45 sec."
+      }
+    ],
+    [
+      {
+        "classes": "sjitem kill",
+        "content": "Maghda"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Izual<br>(Hard, level 60+)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Queen Araneae<br>(Master, level 70+)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Siegebreaker<br>(T4, level 70)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Adria<br>(T7)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Cydaea<br>(T10)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Azmodan<br>(T13)"
+      },
+      {
+        "classes": "sjitem kill",
+        "content": "Greed (T13)"
+      },
+      null
+    ],
+    [
+      null,
+      {
+        "classes": "sjitem cube",
+        "content": "Unlock<br>Kanai's Cube"
+      },
+      {
+        "classes": "sjitem cube",
+        "content": "Extract one<br>Cube power"
+      },
+      {
+        "classes": "sjitem cube",
+        "content": "Upgrade rare<br>to legendary"
+      },
+      {
+        "classes": "sjitem cube",
+        "content": "Equip all three<br>Cube slots"
+      },
+      {
+        "classes": "sjitem cube",
+        "content": "Convert a<br>set item"
+      },
+      {
+        "classes": "sjitem cube",
+        "content": "Extract 20<br>Cube powers"
+      },
+      {
+        "classes": "sjitem cube",
+        "content": "Reforge a<br>legendary"
+      },
+      {
+        "classes": "sjitem cube",
+        "content": "Extract 40<br>Cube powers"
+      }
+    ],
+    [
+      {
+        "classes": "sjitem bounties",
+        "content": "5 bounties"
+      },
+      {
+        "classes": "sjitem misc",
+        "content": "Fully equip<br>follower"
+      },
+      {
+        "classes": "sjitem artisans",
+        "content": "Craft an<br>Imperial gem"
+      },
+      {
+        "classes": "sjitem artisans",
+        "content": "Reforge socket<br>on weapon"
+      },
+      {
+        "classes": "sjitem kadala",
+        "content": "Get legendary<br>from Kadala"
+      },
+      {
+        "classes": "sjitem artisans",
+        "content": "Craft a Flawless<br>Royal gem"
+      },
+      null,
+      {
+        "classes": "sjitem gems",
+        "content": "One 50+<br>augment"
+      },
+      null
+    ],
+    [
+      {
+        "classes": "sjitem misc",
+        "content": "Socket 5 gems"
+      },
+      {
+        "classes": "sjitem artisans",
+        "content": "All artisans<br>level 12"
+      },
+      {
+        "classes": "sjitem bounties",
+        "content": "Act I<br>bounty cache"
+      },
+      {
+        "classes": "sjitem ubers",
+        "content": "Keywarden<br>Act 1 (T4)"
+      },
+      {
+        "classes": "sjitem conqgems gems",
+        "content": "One gem to<br>rank 25"
+      },
+      {
+        "classes": "sjitem conqgems gems",
+        "content": "Three gems to<br>rank 35"
+      },
+      {
+        "classes": "sjitem conqgems gems",
+        "content": "Three gems<br>to rank 45"
+      },
+      {
+        "classes": "sjitem conqgems gems",
+        "content": "Three gems<br>to rank 55"
+      },
+      {
+        "classes": "sjitem conqgems gems",
+        "content": "Three gems<br>to rank 70"
+      }
+    ],
+    [
+      {
+        "classes": "sjitem artisans",
+        "content": "Blacksmith<br>level 10"
+      },
+      {
+        "classes": "sjitem artisans",
+        "content": "Craft lvl70 item<br>at Blacksmith"
+      },
+      {
+        "classes": "sjitem bounties",
+        "content": "Act II<br>bounty cache"
+      },
+      {
+        "classes": "sjitem ubers",
+        "content": "Keywarden<br>Act 2 (T4)"
+      },
+      {
+        "classes": "sjitem setdung",
+        "content": "Complete a<br>Set Dungeon"
+      },
+      {
+        "classes": "sjitem setdung",
+        "content": "Complete an<br>Echoing NM"
+      },
+      {
+        "classes": "sjitem conquests",
+        "content": "Complete<br>1 conquest"
+      },
+      {
+        "classes": "sjitem conquests",
+        "content": "Complete<br>2 conquests"
+      },
+      {
+        "classes": "sjitem conquests",
+        "content": "Complete<br>3 conquests"
+      }
+    ],
+    [
+      {
+        "classes": "sjitem artisans",
+        "content": "Jeweler<br>level 10"
+      },
+      {
+        "classes": "sjitem artisans",
+        "content": "Craft level 70<br>item at Jeweler"
+      },
+      {
+        "classes": "sjitem bounties",
+        "content": "Act III<br>bounty cache"
+      },
+      {
+        "classes": "sjitem ubers",
+        "content": "Keywarden<br>Act 3 (T4)"
+      },
+      {
+        "classes": "sjitem ubers",
+        "content": "(A1) Realm of<br>Regret (T1)"
+      },
+      {
+        "classes": "sjitem ubers",
+        "content": "(A3) Realm of<br>Terror (T10)"
+      },
+      {
+        "classes": "sjitem ubers",
+        "content": "Craft Hellfire<br>Amulet"
+      },
+      null,
+      null
+    ],
+    [
+      {
+        "classes": "sjitem artisans",
+        "content": "Mystic<br>level 10"
+      },
+      {
+        "classes": "sjitem artisans",
+        "content": "Enchant at<br>Mystic"
+      },
+      {
+        "classes": "sjitem bounties",
+        "content": "Act IV<br>bounty cache"
+      },
+      {
+        "classes": "sjitem ubers",
+        "content": "Keywarden<br>Act 4 (T4)"
+      },
+      {
+        "classes": "sjitem ubers",
+        "content": "(A2) Realm of<br> Putridness (T1)"
+      },
+      {
+        "classes": "sjitem ubers",
+        "content": "(A4) Realm of<br>Fright (T10)"
+      },
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      {
+        "classes": "sjitem artisans",
+        "content": "Transmogrify<br>at Mystic"
+      },
+      {
+        "classes": "sjitem bounties",
+        "content": "Act V<br>bounty cache"
+      },
+      {
+        "classes": "sjitem artisans",
+        "content": "Learn 5 jewel-<br>crafter designs"
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      {
+        "classes": "sjitem artisans",
+        "content": "Learn 5 black-<br>smith recipes"
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      {
+        "classes": "rewards current",
+        "content": "(No reward)"
+      },
+      {
+        "classes": "rewards",
+        "content": "1<sup>st</sup> Haedrig<br>(head+hands)<br>transmog (lvl 70)"
+      },
+      {
+        "classes": "rewards",
+        "content": "2<sup>nd</sup> Haedrig<br>(feet+shoulders)"
+      },
+      {
+        "classes": "rewards",
+        "content": "3<sup>rd</sup> Haedrig<br>portrait frame"
+      },
+      {
+        "classes": "rewards",
+        "content": "Portrait<br>frame"
+      },
+      {
+        "classes": "rewards",
+        "content": "Portrait<br>frame"
+      },
+      {
+        "classes": "rewards",
+        "content": "Portrait<br>frame"
+      },
+      {
+        "classes": "rewards",
+        "content": "Stash tab,<br>portrait frame"
+      },
+      {
+        "classes": "rewards",
+        "content": "Pet,<br>portrait frame"
+      }
+    ]
+  ],
+  "haedrigSets": [
+    {
+      "class": "Barbarian",
+      "name": "Might of the Earth",
+      "url": "https://us.battle.net/d3/en/item/eyes-of-the-earth-Unique_Helm_Set_15_x1"
+    },
+    {
+      "class": "Crusader",
+      "name": "Thorns of the Invoker",
+      "url": "https://us.battle.net/d3/en/item/crown-of-the-invoker-Unique_Helm_Set_12_x1"
+    },
+    {
+      "class": "Demon Hunter",
+      "name": "The Shadow's Mantle",
+      "url": "https://us.battle.net/d3/en/item/the-shadows-mask-Unique_Helm_Set_14_x1"
+    },
+    {
+      "class": "Monk",
+      "name": "Monkey King's Garb",
+      "url": "https://us.battle.net/d3/en/item/sunwukos-crown-Unique_Helm_Set_11_x1"
+    },
+    {
+      "class": "Witch Doctor",
+      "name": "Raiment of the Jade Harvester",
+      "url": "https://us.battle.net/d3/en/item/jade-harvesters-wisdom-Unique_Helm_Set_09_x1"
+    },
+    {
+      "class": "Wizard",
+      "name": "Firebird's Finery",
+      "url": "https://us.battle.net/d3/en/item/firebirds-plume-Unique_Helm_Set_06_x1"
+    },
+    {
+      "class": "Necromancer",
+      "name": "Grace of Inarius",
+      "url": "https://us.battle.net/d3/en/item/inariuss-understanding-P6_Necro_Set_3_Helm"
+    }
+  ]
+}
