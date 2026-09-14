@@ -25,7 +25,16 @@
 
   <br><br>
 
+  <div id="view-controls" aria-label="Display format">
+    <span>View:</span>
+    <button type="button" data-view="cards">Cards</button>
+    <button type="button" data-view="table">Table</button>
+  </div>
+
+  <br>
+
   <div id="tablediv"></div>
+  <div id="mobile-season-view" aria-live="polite"></div>
 
   <br><br><br>
 

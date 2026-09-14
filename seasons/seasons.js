@@ -1,12 +1,23 @@
 const seasonRanges = Array.from({ length: Math.ceil(seasons.length / 10) }, (_, index) =>
   seasons.slice(index * 10, index * 10 + 10),
 );
+let mobileSeasonNumber = seasons[seasons.length - 1].number;
+
+function setMobileView(view) {
+  document.body.dataset.mobileView = view;
+  localStorage.setItem('seasonMobileView', view);
+  document.querySelectorAll('#view-controls button').forEach((button) => {
+    const selected = button.dataset.view === view;
+    button.classList.toggle('active', selected);
+    button.setAttribute('aria-pressed', String(selected));
+  });
+}
 
 function seasonKey(number) {
   return `s${String(number).padStart(2, '0')}`;
 }
 
-function setSeasonVisibility(number, visible) {
+function setSeasonVisibility(number, visible, refreshMobile = true) {
   const key = seasonKey(number);
   const hidden = !visible;
 
@@ -19,11 +30,14 @@ function setSeasonVisibility(number, visible) {
   button.classList.toggle('no', hidden);
   button.setAttribute('aria-pressed', String(visible));
   localStorage.setItem(key, visible ? 'yes' : 'no');
+  if (refreshMobile) renderMobileView();
 }
 
 function showRange(range) {
   const rangeNumbers = new Set(range.map((season) => season.number));
-  seasons.forEach((season) => setSeasonVisibility(season.number, rangeNumbers.has(season.number)));
+  seasons.forEach((season) => setSeasonVisibility(season.number, rangeNumbers.has(season.number), false));
+  mobileSeasonNumber = range[range.length - 1].number;
+  renderMobileView();
 
   document.querySelectorAll('.range-button').forEach((button) => {
     button.classList.toggle('active', button.dataset.range === range[0].number.toString());
@@ -106,6 +120,78 @@ function renderSeasonControls() {
   });
 }
 
+function visibleSeasons() {
+  return seasons.filter((season) => localStorage.getItem(seasonKey(season.number)) !== 'no');
+}
+
+function renderMobileView() {
+  const container = document.getElementById('mobile-season-view');
+  const visible = visibleSeasons();
+  if (!visible.length) {
+    container.innerHTML = '<p class="mobile-empty">No seasons are selected. Use Customize to choose one or more seasons.</p>';
+    return;
+  }
+
+  let currentIndex = visible.findIndex((season) => season.number === mobileSeasonNumber);
+  if (currentIndex === -1) currentIndex = visible.length - 1;
+  const current = visible[currentIndex];
+  mobileSeasonNumber = current.number;
+
+  const selector = document.createElement('select');
+  selector.id = 'mobile-season-select';
+  selector.setAttribute('aria-label', 'Season to display');
+  visible.forEach((season) => {
+    const option = new Option(`Season ${season.number}`, season.number, false, season.number === current.number);
+    selector.add(option);
+  });
+  selector.addEventListener('change', () => {
+    mobileSeasonNumber = Number(selector.value);
+    renderMobileView();
+  });
+
+  const previous = document.createElement('button');
+  previous.type = 'button';
+  previous.className = 'mobile-season-nav';
+  previous.textContent = 'Previous';
+  previous.disabled = currentIndex === 0;
+  previous.addEventListener('click', () => {
+    mobileSeasonNumber = visible[currentIndex - 1].number;
+    renderMobileView();
+  });
+
+  const next = document.createElement('button');
+  next.type = 'button';
+  next.className = 'mobile-season-nav';
+  next.textContent = 'Next';
+  next.disabled = currentIndex === visible.length - 1;
+  next.addEventListener('click', () => {
+    mobileSeasonNumber = visible[currentIndex + 1].number;
+    renderMobileView();
+  });
+
+  const navigation = document.createElement('div');
+  navigation.className = 'mobile-season-navigation';
+  navigation.append(previous, selector, next);
+
+  const card = document.createElement('article');
+  card.className = 'mobile-season-card';
+  const title = document.createElement('h3');
+  title.textContent = `Season ${current.number}`;
+  card.append(title);
+
+  const details = document.createElement('dl');
+  seasonFields.forEach((field) => {
+    const label = document.createElement('dt');
+    label.innerHTML = field.label;
+    const value = document.createElement('dd');
+    value.innerHTML = current.values[field.key] || '—';
+    details.append(label, value);
+  });
+  card.append(details);
+
+  container.replaceChildren(navigation, card);
+}
+
 function loadSettings() {
   const hasSavedSettings = seasons.some((season) => localStorage.getItem(seasonKey(season.number)) !== null);
   if (!hasSavedSettings) {
@@ -114,8 +200,9 @@ function loadSettings() {
   }
 
   seasons.forEach((season) => {
-    setSeasonVisibility(season.number, localStorage.getItem(seasonKey(season.number)) !== 'no');
+    setSeasonVisibility(season.number, localStorage.getItem(seasonKey(season.number)) !== 'no', false);
   });
+  renderMobileView();
 }
 
 function openModal() {
@@ -132,6 +219,12 @@ renderTable();
 renderRangeControls();
 renderSeasonControls();
 loadSettings();
+renderMobileView();
+
+setMobileView(localStorage.getItem('seasonMobileView') || 'cards');
+document.querySelectorAll('#view-controls button').forEach((button) => {
+  button.addEventListener('click', () => setMobileView(button.dataset.view));
+});
 
 document.getElementById('customize-button').addEventListener('click', openModal);
 document.getElementById('customize-close').addEventListener('click', closeModal);
