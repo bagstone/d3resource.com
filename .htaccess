@@ -1,0 +1,5 @@
+# Short, memorable aliases for the Diablo 3 season countdown.
+Redirect 302 /next-season /countdown/
+Redirect 302 /season-end /countdown/
+Redirect 302 /when-is-next-season /countdown/
+Redirect 302 /is-season-over-yet /countdown/
