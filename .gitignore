@@ -2,3 +2,4 @@
 # Ignore .secret-stack folder
 .secret-stack
 .DS_Store
+journey/.env

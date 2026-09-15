@@ -29,9 +29,11 @@ Relevant files:
 `journey/index.php` is now one shared PHP template.  It discovers and renders
 `journey/data/seasonNN.json` files rather than requiring a copied page per
 season.  Season-specific content includes the chapters, journey grid,
-conquests, rewards, Haedrig's Gift sets, and dates.
+conquests, rewards, and Haedrig's Gift sets. Dates live separately in
+`journey/data/schedule.json`.
 
-The tracker selects the newest season whose `visibleFrom` date has arrived.
+The tracker selects the newest season whose preceding season has ended (the
+first tracker appears on its own start date).
 `journey/?season=NN` intentionally overrides that choice for reviewing a
 prepared season.  Per-season completion is stored separately in the browser
 under the `journey-NN-` prefix, so progress from one season cannot affect
@@ -45,13 +47,13 @@ they are the contract used by that script and the page styles.
 The data format and seasonal hand-off procedure are documented in
 `journey/data/README.md`.  In particular:
 
-- Keep dates in `YYYY-MM-DD`; use `null` for an unknown end date.
-- Set `visibleFrom` to the date the root tracker should change over (normally
-  the day after the prior season ends).
+- Keep schedule dates in `YYYY-MM-DD`; use `null` for an unknown end date.
+- Local `journey/.env` overrides, copied from `.env.example`, can simulate
+  date transitions without changing committed data.
 - Use `journey/?season=NN` to check a future season before it becomes current.
 - Preserve nine cells per `journeyRows` row; use `null` for an empty cell.
 
 Initial migrated/prepared data files are `season39.json` through
-`season42.json`.  Update the relevant JSON file when official season details
-are announced; template edits should be unnecessary for ordinary season
-content changes.
+`season42.json`. Update `schedule.json` when official season dates are
+announced; template edits should be unnecessary for ordinary season content
+changes.

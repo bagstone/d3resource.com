@@ -1,16 +1,50 @@
 <?php
-/** Data-driven tracker: add journey/data/seasonNN.json; no template edits needed. */
+/** Data-driven tracker: add a season file and its schedule entry; no template edits needed. */
+$schedule = json_decode(file_get_contents(__DIR__ . '/data/schedule.json'), true);
+if (!is_array($schedule)) { http_response_code(500); exit('Invalid journey schedule data.'); }
+
+// PHP does not load .env files itself, so support a tiny local override file without a dependency.
+$overrides = array();
+$envFile = __DIR__ . '/.env';
+if (is_readable($envFile)) {
+    foreach (file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+        $line = trim($line);
+        if ($line === '' || $line[0] === '#' || strpos($line, '=') === false) continue;
+        list($name, $value) = explode('=', $line, 2);
+        $overrides[trim($name)] = trim($value);
+    }
+}
+function scheduleDate($value, $field) {
+    if ($value === null || $value === '') return null;
+    if (!is_string($value) || !preg_match('/^\\d{4}-\\d{2}-\\d{2}$/', $value)) {
+        http_response_code(500); exit('Invalid ' . $field . ' in journey schedule.');
+    }
+    return $value;
+}
+
 $files = glob(__DIR__ . '/data/season*.json');
 $seasons = array();
 foreach ($files as $file) {
     if (!preg_match('/^season[0-9]+\\.json$/', basename($file))) continue;
     $data = json_decode(file_get_contents($file), true);
-    if (is_array($data) && isset($data['number'], $data['visibleFrom'])) $seasons[] = $data;
+    if (!is_array($data) || !isset($data['number'])) continue;
+    $number = (string)$data['number'];
+    if (!isset($schedule[$number]) || !is_array($schedule[$number])) continue;
+    foreach (array('startDate' => 'START', 'endDate' => 'END') as $field => $suffix) {
+        $override = 'S' . $number . '_' . $suffix;
+        $value = array_key_exists($override, $overrides) ? $overrides[$override] : (isset($schedule[$number][$field]) ? $schedule[$number][$field] : null);
+        $data[$field] = scheduleDate($value, $override);
+    }
+    $seasons[] = $data;
 }
 usort($seasons, function ($a, $b) { return $a['number'] - $b['number']; });
 $today = gmdate('Y-m-d');
 $season = end($seasons);
-foreach ($seasons as $candidate) if ($candidate['visibleFrom'] <= $today) $season = $candidate;
+foreach ($seasons as $index => $candidate) {
+    $visibleFrom = $index === 0 ? $candidate['startDate'] : $seasons[$index - 1]['endDate'];
+    if ($visibleFrom !== null && $index > 0) $visibleFrom = gmdate('Y-m-d', strtotime($visibleFrom . ' +1 day'));
+    if ($visibleFrom !== null && $visibleFrom <= $today) $season = $candidate;
+}
 // Useful for preparing/reviewing a future file without waiting for its hand-off.
 if (isset($_GET['season']) && ctype_digit($_GET['season'])) {
     foreach ($seasons as $candidate) if ($candidate['number'] == (int)$_GET['season']) $season = $candidate;
