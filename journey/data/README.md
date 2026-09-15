@@ -15,3 +15,6 @@ During the seven days after `startDate`, the page says `STARTED`; afterwards it 
 `conquests` is split into Softcore and Hardcore groups, and `haedrigSets` is a seven-item list with optional official item URLs. Use `journey/?season=40` to review a prepared file. A season with no start date is prepared but not live.
 
 For local date testing, copy `journey/.env.example` to `journey/.env` and add overrides such as `S39_END=2026-09-15` and `S40_START=2026-09-16`. The override file is ignored by Git. A blank `SNN_END=` simulates an unknown end date.
+
+The standalone `/countdown/` page reads this same schedule and `.env` file.
+Do not maintain dates separately for it.

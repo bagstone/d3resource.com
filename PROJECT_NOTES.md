@@ -57,3 +57,38 @@ Initial migrated/prepared data files are `season39.json` through
 `season42.json`. Update `schedule.json` when official season dates are
 announced; template edits should be unnecessary for ordinary season content
 changes.
+
+## Season countdown
+
+`/countdown/` is a deliberately standalone, header/footer-free answer to
+“when does the current Diablo 3 season end / the next one start?”. It reads
+the same `journey/data/schedule.json` and local `journey/.env` overrides as
+the Journey tracker, so announcing a date only requires the normal schedule
+or environment update. It does not need a separate source of truth.
+
+When an end date is announced, it shows a worldwide end timer. When the next
+start date is announced, it shows separate Console, NA, EU, and Asia timers;
+each launch is calculated as 5 p.m. in that region’s local timezone. The end
+timer uses the schedule entry’s `endTimeZone`. The page intentionally uses
+the Journey stylesheet for the established site appearance, plus
+`countdown/countdown.css` for the centered card layout.
+
+If the current end date is unannounced, the page says so, links the 79–121
+day maintenance-era range to the Seasons overview, and provides conservative
+estimated dates. The estimate bands are 86/93 days from launch through day
+72, 93/100 from day 73 through 84, and 114/121 from day 85 onward.
+
+Each known timer has a minimal stream-overlay endpoint containing only that
+timer:
+
+- `/countdown/end/`
+- `/countdown/start-console/`
+- `/countdown/start-na/`
+- `/countdown/start-eu/`
+- `/countdown/start-asia/` (with `/countdown/start/asia/` as an alias)
+
+The root `.htaccess` contains temporary (`302`) redirect aliases for
+`/next-season`, `/season-end`, `/when-is-next-season`, and
+`/is-season-over-yet`, all pointing to `/countdown/`. Change them to `301`
+only when the aliases and destination are settled, because browsers cache
+permanent redirects aggressively.
