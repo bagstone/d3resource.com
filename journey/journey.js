@@ -52,6 +52,10 @@
     draw(); setInterval(draw, 1000);
   }
   $(function () {
+    if (window.journeySharedProgress) {
+      $.each(window.journeySharedProgress.conquests, function (_, id) { $('#' + id).addClass('done'); });
+      $.each(window.journeySharedProgress.items, function (_, id) { $('#' + id).addClass('done'); });
+    }
     $.each(localStorage, function (storedKey, value) {
       if (storedKey.indexOf(storagePrefix) === 0 && value === 'done') $('#' + storedKey.slice(storagePrefix.length)).addClass('done');
     });
