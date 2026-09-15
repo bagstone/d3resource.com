@@ -17,17 +17,37 @@
       $('#complete' + i).text(i < current ? 'Complete!' : i === current ? 'Current' : '');
     }
   }
-  function localTime(date, zone) { return atLocalTimeInZone(date, zone); }
+  function formatCountdown(distance) {
+    return Math.floor(distance / 86400000) + 'd ' + String(Math.floor(distance % 86400000 / 3600000)).padStart(2, '0') + 'h ' + String(Math.floor(distance % 3600000 / 60000)).padStart(2, '0') + 'm ' + String(Math.floor(distance % 60000 / 1000)).padStart(2, '0') + 's';
+  }
+  // Starts are simultaneous at 5 p.m. in each region's local time. One calendar
+  // date is deliberately converted for each region, including its DST offset.
   function startCountdown(date, label) {
     if (!date) return;
     $('#countdowndiv').removeClass('hidden');
+    $('#start-countdowns').removeClass('hidden');
+    $('#end-countdown').addClass('hidden');
     var zones = { na: 'America/Los_Angeles', eu: 'Europe/Paris', asia: 'Asia/Seoul' };
     function draw() {
       var now = Date.now();
       $.each(zones, function (name, zone) {
-        var distance = localTime(date, zone) - now;
-        $('#countdown_' + name).text(distance <= 0 ? label : Math.floor(distance / 86400000) + 'd ' + String(Math.floor(distance % 86400000 / 3600000)).padStart(2, '0') + 'h ' + String(Math.floor(distance % 3600000 / 60000)).padStart(2, '0') + 'm ' + String(Math.floor(distance % 60000 / 1000)).padStart(2, '0') + 's');
+        var distance = atLocalTimeInZone(date, zone) - now;
+        $('#countdown_' + name).text(distance <= 0 ? label : formatCountdown(distance));
       });
+    }
+    draw(); setInterval(draw, 1000);
+  }
+  // Ends are one announced moment worldwide (currently 5 p.m. Pacific), so do
+  // not reinterpret the date in every region's local time.
+  function endCountdown(date, timeZone) {
+    if (!date) return;
+    $('#countdowndiv').removeClass('hidden');
+    $('#start-countdowns').addClass('hidden');
+    $('#end-countdown').removeClass('hidden');
+    var target = atLocalTimeInZone(date, timeZone);
+    function draw() {
+      var distance = target - Date.now();
+      $('#countdown_all').text(distance <= 0 ? 'ENDED' : formatCountdown(distance));
     }
     draw(); setInterval(draw, 1000);
   }
@@ -36,11 +56,10 @@
       if (storedKey.indexOf(storagePrefix) === 0 && value === 'done') $('#' + storedKey.slice(storagePrefix.length)).addClass('done');
     });
     updateCompletion();
-    var today = new Date().toISOString().slice(0, 10);
-    var startedThrough = new Date(new Date(season.startDate + 'T00:00:00Z').getTime() + 7 * 86400000).toISOString().slice(0, 10);
-    if (today < season.startDate) startCountdown(season.startDate, 'STARTED');
-    else if (today <= startedThrough) startCountdown(season.startDate, 'STARTED');
-    else if (season.endDate && today <= season.endDate) startCountdown(season.endDate, 'ENDED');
+    var now = Date.now();
+    var startCountdownThrough = season.startDate && Date.parse(season.startDate + 'T00:00:00Z') + 7 * 86400000;
+    if (startCountdownThrough && now <= startCountdownThrough) startCountdown(season.startDate, 'STARTED');
+    else if (season.endDate && now < atLocalTimeInZone(season.endDate, season.endTimeZone)) endCountdown(season.endDate, season.endTimeZone);
     $('td.sjitem, td.conqitem').on('click', function () { ($(this).hasClass('done') ? unset : set)(this.id); updateCompletion(); });
     $('th.header').on('click', function () {
       var col = this.id.slice(3), complete = $('.sjitem.cat' + col + '.done').length === criteria[col];

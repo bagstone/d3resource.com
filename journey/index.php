@@ -21,6 +21,12 @@ function scheduleDate($value, $field) {
     }
     return $value;
 }
+function scheduleTimeZone($value, $field) {
+    if (!is_string($value) || !in_array($value, timezone_identifiers_list(), true)) {
+        http_response_code(500); exit('Invalid ' . $field . ' in journey schedule.');
+    }
+    return $value;
+}
 
 $files = glob(__DIR__ . '/data/season*.json');
 $seasons = array();
@@ -35,6 +41,8 @@ foreach ($files as $file) {
         $value = array_key_exists($override, $overrides) ? $overrides[$override] : (isset($schedule[$number][$field]) ? $schedule[$number][$field] : null);
         $data[$field] = scheduleDate($value, $override);
     }
+    // Season endings now use one announced instant instead of one local time per region.
+    $data['endTimeZone'] = scheduleTimeZone(isset($schedule[$number]['endTimeZone']) ? $schedule[$number]['endTimeZone'] : 'America/Los_Angeles', 'endTimeZone');
     $seasons[] = $data;
 }
 usort($seasons, function ($a, $b) { return $a['number'] - $b['number']; });
@@ -99,7 +107,7 @@ $json = json_encode($season, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_
 </head><body>
 <?php include('../d3rheader.php'); ?>
 <div id="maindiv"><h1>Diablo 3: Season <?= (int)$season['number'] ?> Journey Tracker</h1>
-<div id="countdowndiv" class="hidden"><div class="countdowndiv">NA/Console:<p class="countdown" id="countdown_na"></p></div><div class="countdowndiv">EU:<p class="countdown" id="countdown_eu"></p></div><div class="countdowndiv">Asia:<p class="countdown" id="countdown_asia"></p></div></div>
+<div id="countdowndiv" class="hidden"><div id="start-countdowns"><div class="countdowndiv">NA/Console:<p class="countdown" id="countdown_na"></p></div><div class="countdowndiv">EU:<p class="countdown" id="countdown_eu"></p></div><div class="countdowndiv">Asia:<p class="countdown" id="countdown_asia"></p></div></div><div id="end-countdown" class="hidden"><div class="countdowndiv">All regions/platforms:<p class="countdown" id="countdown_all"></p></div></div></div>
 <div id="legenddiv"><span class="categories" id="conquests">Conquests</span><span class="categories" id="rift">Rifts</span><span class="categories" id="solo">Solo GRs</span><span class="categories" id="kill">Bosses</span><span class="categories" id="cube">Cube</span><span class="categories" id="artisans">Artisans</span><span class="categories" id="gems">Leg. gems</span><span class="categories" id="ubers">Ubers</span><span class="categories" id="kadala">Kadala</span><span class="categories" id="bounties">Bounties</span><span class="categories" id="setdung">Set dungeons</span><span class="categories" id="misc">Misc</span></div>
 <div id="conqdiv" class="hidden"><p>List of conquests in Season <?= (int)$season['number'] ?>:</p><?php renderConquests($season['conquests']); ?></div><?php renderJourneyTable($season); ?>
 <br><br><span class="subtitle">Clicking on a column header will check/uncheck the entire chapter.</span><br><br><span class="subtitle">Looking for guides? Check <a href="https://www.reddit.com/r/diablo3/" target="_blank">r/diablo3</a> for season mega-guides and up-to-date starter information, and <a href="https://maxroll.gg/d3" target="_blank">Maxroll</a> for all-around Diablo 3 guides and information.</span>
