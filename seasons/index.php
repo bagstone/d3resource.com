@@ -41,7 +41,7 @@
   <div id="legend">
     <span>Notes:</span><br>
     <span class="legend">&bull; Sources: <a href="http://www.diablofans.com/" target="_blank">Diablofans</a>, <a href="http://diablo.wikia.com/wiki/Season" target="_blank">Diablo Wiki</a>, <a href="https://www.reddit.com/r/Diablo/wiki/condensedpatchnotes" target="_blank">Reddit</a>, <a href="https://www.reddit.com/r/diablo3/comments/8pazfl/season_14_rewards_and_wings/e09t4ks/">/u/illithidbane's sheet</a>, and various other sources.</span><br>
-    <span class="legend">&bull; End lead time is the calendar-day notice before the season ended; blank means the announcement date could not be confirmed.</span><br>
+    <span class="legend">&bull; End lead time is the calendar-day notice before the season ended. Seasons 29&ndash;38 use <a href="https://www.reddit.com/r/diablo3/comments/1w5fvyg/we_may_see_a_season_40_announcement_next_friday/" target="_blank">/u/tbmadduxor's announcement-date research</a>; blank means the announcement date could not be confirmed.</span><br>
     <span class="legend">&bull; For feedback, questions, or any updated data contact <a href="https://www.reddit.com/user/bagstone" target="_blank">me on Reddit</a>.</span>
   </div>
 

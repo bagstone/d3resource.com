@@ -767,6 +767,7 @@ const seasons = [
     values: {
       startDate: "15 Sep 2023",
       endDate: "07 Jan 2024",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-us/article/24046224/season-30-the-lords-of-hell-preview-1-5-2024\" target=\"_blank\">2 days</a>",
       duration: "114 days",
       patch: "<a href=\"https://us.diablo3.blizzard.com/en-us/blog/23987087\" target=\"_blank\">2.7.6</a>",
       theme: "<small>Vis. of Enmity</small>",
@@ -793,6 +794,7 @@ const seasons = [
     values: {
       startDate: "12 Jan 2024",
       endDate: "07 Apr 2024",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-us/article/24078323/season-31-season-of-the-forbidden-archives-preview\" target=\"_blank\">11 days</a>",
       duration: "86 days",
       patch: "<a href=\"https://us.diablo3.blizzard.com/en-us/blog/24046224/season-30-the-lords-of-hell-preview-1-5-2024\" target=\"_blank\">2.7.7</a>",
       theme: "<small>Lords of Hell</small>",
@@ -927,6 +929,7 @@ const seasons = [
     values: {
       startDate: "05 Jun 2025",
       endDate: "07 Sep 2025",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-gb/article/24231417/season-36-the-lords-of-hell-preview\" target=\"_blank\">9 days</a>",
       duration: "94 days",
       patch: "<a href=\"https://news.blizzard.com/en-us/article/24191146/season-35-eternal-conflict-preview\" target=\"_blank\">2.8.0</a>",
       theme: "<small>Eternal Conflict</small>",
@@ -980,6 +983,7 @@ const seasons = [
     values: {
       startDate: "05 Dec 2025",
       endDate: "22 Mar 2026",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-us/article/24262572/season-38-ethereal-memory-preview\" target=\"_blank\">9 days</a>",
       duration: "105 days",
       patch: "<a href=\"https://news.blizzard.com/en-us/article/24243442/season-37-the-forbidden-archives-preview\" target=\"_blank\">2.8.0</a>",
       theme: "<small>Forb. Archives</small>",
@@ -1006,6 +1010,7 @@ const seasons = [
     values: {
       startDate: "27 Mar 2026",
       endDate: "21 Jun 2026",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-gb/article/24287549/season-39-shades-of-the-nephalem-now-live\" target=\"_blank\">2 days</a>",
       duration: "86 days",
       patch: "<a href=\"https://news.blizzard.com/en-us/article/24262572/season-38-ethereal-memory-preview\" target=\"_blank\">2.8.0</a>",
       theme: "<small>Eth. Memory</small>",
