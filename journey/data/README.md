@@ -6,11 +6,9 @@ Each `seasonNN.json` contains page-specific content. The shared PHP template and
 
 - `startDate`: launch date, in `YYYY-MM-DD`.
 - `endDate`: set it to `null` until Blizzard announces it.
-- `endTimeZone`: IANA zone for the single worldwide end instant. Use the zone
-  Blizzard announces (currently `America/Los_Angeles` for 5 p.m. PDT/PST).
 - The first tracker becomes visible on its start date. Each later tracker becomes visible the calendar day after the prior season ends, allowing its start countdown to appear.
 
-During the seven days after `startDate`, the page says `STARTED`; afterwards it shows an end countdown only if `endDate` is known. Starts use one calendar date, converted to Blizzard's 5 p.m. local launch time for NA/Console, EU, and Asia (including DST). Ends use one countdown labelled “All regions/platforms”, calculated from the announced timezone rather than reinterpreted for every region.
+During the seven days after `startDate`, the page says `STARTED`; afterwards it shows an end countdown only if `endDate` is known. Starts and ends use one calendar date, converted to Blizzard's 5 p.m. local time for NA/Console, EU, and Asia (including DST). The end display notes that Blizzard's blog posts have not made clear whether seasons end at normal regional times or simultaneously at the Americas time.
 
 `conquests` is split into Softcore and Hardcore groups, and `haedrigSets` is a seven-item list with optional official item URLs. Use `journey/?season=40` to review a prepared file. A season with no start date is prepared but not live.
 

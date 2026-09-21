@@ -16,7 +16,6 @@ p { margin: 10px 0; }
 
 .countdown-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 28px auto; }
 .countdown-card { margin: 0; min-width: 215px; }
-.end-card { margin: 28px auto; }
 .date { display: block; margin-bottom: 8px; }
 .timer {
 	display: inline-block;

@@ -37,17 +37,20 @@
     }
     draw(); setInterval(draw, 1000);
   }
-  // Ends are one announced moment worldwide (currently 5 p.m. Pacific), so do
-  // not reinterpret the date in every region's local time.
-  function endCountdown(date, timeZone) {
+  // As with launches, each region's season end is shown at 5 p.m. on the
+  // announced calendar date in that region.
+  function endCountdown(date) {
     if (!date) return;
     $('#countdowndiv').removeClass('hidden');
     $('#start-countdowns').addClass('hidden');
     $('#end-countdown').removeClass('hidden');
-    var target = atLocalTimeInZone(date, timeZone);
+    var zones = { na: 'America/Los_Angeles', eu: 'Europe/Paris', asia: 'Asia/Seoul' };
     function draw() {
-      var distance = target - Date.now();
-      $('#countdown_all').text(distance <= 0 ? 'ENDED' : formatCountdown(distance));
+      var now = Date.now();
+      $.each(zones, function (name, zone) {
+        var distance = atLocalTimeInZone(date, zone) - now;
+        $('#end_countdown_' + name).text(distance <= 0 ? 'ENDED' : formatCountdown(distance));
+      });
     }
     draw(); setInterval(draw, 1000);
   }
@@ -63,8 +66,24 @@
     var now = Date.now();
     var startCountdownThrough = season.startDate && Date.parse(season.startDate + 'T00:00:00Z') + 7 * 86400000;
     if (startCountdownThrough && now <= startCountdownThrough) startCountdown(season.startDate, 'STARTED');
-    else if (season.endDate && now < atLocalTimeInZone(season.endDate, season.endTimeZone)) endCountdown(season.endDate, season.endTimeZone);
-    $('td.sjitem, td.conqitem').on('click', function () { ($(this).hasClass('done') ? unset : set)(this.id); updateCompletion(); });
+    else if (season.endDate) endCountdown(season.endDate);
+    $('td.sjitem, td.conqitem').on('click', function () {
+      var wasDone = $(this).hasClass('done');
+      (wasDone ? unset : set)(this.id);
+      if (!wasDone && $(this).hasClass('rift') && this.id.slice(-1) === 'a') {
+        var column = Number(this.id.match(/td-sj(\d+)/)[1]);
+        for (var riftColumn = 1; riftColumn < column; riftColumn++) set('td-sj' + riftColumn + 'a');
+      }
+      // Reaching artisan level 12 necessarily means all three artisans reached
+      // their Chapter II level-10 milestones.
+      if (!wasDone && this.id === 'td-sj2g') ['td-sj1h', 'td-sj1i', 'td-sj1j'].forEach(set);
+      if (wasDone && $(this).hasClass('rift') && this.id.slice(-1) === 'a') {
+        var clearedColumn = Number(this.id.match(/td-sj(\d+)/)[1]);
+        for (var higherRiftColumn = clearedColumn + 1; higherRiftColumn <= 9; higherRiftColumn++) unset('td-sj' + higherRiftColumn + 'a');
+      }
+      if (wasDone && ['td-sj1h', 'td-sj1i', 'td-sj1j'].indexOf(this.id) !== -1) unset('td-sj2g');
+      updateCompletion();
+    });
     $('th.header').on('click', function () {
       var col = this.id.slice(3), complete = $('.sjitem.cat' + col + '.done').length === criteria[col];
       $('.sjitem.cat' + col).each(function () { (complete ? unset : set)(this.id); }); updateCompletion();

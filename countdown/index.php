@@ -31,8 +31,7 @@ foreach ($schedule as $number => $entry) {
     $seasons[] = array(
         'number' => $number,
         'startDate' => countdownDate(array_key_exists($startKey, $overrides) ? $overrides[$startKey] : (isset($entry['startDate']) ? $entry['startDate'] : null), $startKey),
-        'endDate' => countdownDate(array_key_exists($endKey, $overrides) ? $overrides[$endKey] : (isset($entry['endDate']) ? $entry['endDate'] : null), $endKey),
-        'endTimeZone' => isset($entry['endTimeZone']) ? $entry['endTimeZone'] : 'America/Los_Angeles'
+        'endDate' => countdownDate(array_key_exists($endKey, $overrides) ? $overrides[$endKey] : (isset($entry['endDate']) ? $entry['endDate'] : null), $endKey)
     );
 }
 usort($seasons, function ($a, $b) { return $a['number'] <=> $b['number']; });
@@ -61,9 +60,11 @@ $pageData = json_encode(array('current' => $current, 'next' => $next), JSON_HEX_
 $plainType = isset($_GET['_plain']) ? $_GET['_plain'] : null;
 if ($plainType !== null) {
     $plainTimer = null;
-    if ($plainType === 'end' && $current['endDate'] !== null) {
-        $plainTimer = array('kind' => 'end', 'date' => $current['endDate'], 'zone' => $current['endTimeZone']);
-    } elseif ($next !== null && $next['startDate'] !== null) {
+    if ($current['endDate'] !== null) {
+        $plainEndZones = array('end' => 'America/Los_Angeles', 'end-na' => 'America/Los_Angeles', 'end-console' => 'America/Los_Angeles', 'end-eu' => 'Europe/Paris', 'end-asia' => 'Asia/Seoul');
+        if (isset($plainEndZones[$plainType])) $plainTimer = array('kind' => 'end', 'date' => $current['endDate'], 'zone' => $plainEndZones[$plainType]);
+    }
+    if ($plainTimer === null && $next !== null && $next['startDate'] !== null) {
         $plainZones = array('start-na' => 'America/Los_Angeles', 'start-console' => 'America/Los_Angeles', 'start-eu' => 'Europe/Paris', 'start-asia' => 'Asia/Seoul');
         if (isset($plainZones[$plainType])) $plainTimer = array('kind' => 'start', 'date' => $next['startDate'], 'zone' => $plainZones[$plainType]);
     }
@@ -90,9 +91,11 @@ if ($plainType !== null) {
     <p class="unknown">Season <?= (int)$current['number'] ?> end date<?= $next ? ' and Season ' . (int)$next['number'] . ' start date' : '' ?> are unknown.</p>
   <?php endif; ?>
 
-  <?php if ($current['endDate'] !== null): ?><section class="countdown-card end-card"><h2>Season <?= (int)$current['number'] ?> ends</h2><time datetime="<?= htmlspecialchars($current['endDate']) ?>" class="date"><?= htmlspecialchars((new DateTimeImmutable($current['endDate']))->format('l, j F Y')) ?></time><strong class="timer" data-kind="end" data-date="<?= htmlspecialchars($current['endDate']) ?>" data-zone="<?= htmlspecialchars($current['endTimeZone']) ?>"></strong><a class="plain-link" href="/countdown/end">Plain view</a></section><?php endif; ?>
+  <?php if ($current['endDate'] !== null): ?><div class="countdown-row">
+    <?php foreach (array('console' => 'Console', 'na' => 'NA', 'eu' => 'EU', 'asia' => 'Asia') as $region => $label): $zone = $region === 'eu' ? 'Europe/Paris' : ($region === 'asia' ? 'Asia/Seoul' : 'America/Los_Angeles'); ?><section class="countdown-card end-card"><h2>S<?= (int)$current['number'] ?> ends: <?= $label ?></h2><time datetime="<?= htmlspecialchars($current['endDate']) ?>" class="date"><?= htmlspecialchars((new DateTimeImmutable($current['endDate']))->format('l, j F Y')) ?>, 5 PM</time><strong class="timer" data-kind="end" data-date="<?= htmlspecialchars($current['endDate']) ?>" data-zone="<?= $zone ?>"></strong><a class="plain-link" href="/countdown/end-<?= $region ?>">Plain view</a></section><?php endforeach; ?>
+  </div><p class="note">The blog posts were not clear if the seasons end on different times as normal for each region, or all seasons end at the same (Americas) time.</p><?php endif; ?>
   <?php if ($next && $next['startDate'] !== null): ?><div class="countdown-row">
-    <?php foreach (array('console' => 'Console', 'na' => 'NA', 'eu' => 'EU', 'asia' => 'Asia') as $region => $label): $zone = $region === 'eu' ? 'Europe/Paris' : ($region === 'asia' ? 'Asia/Seoul' : 'America/Los_Angeles'); ?><section class="countdown-card"><h2>Season <?= (int)$next['number'] ?>: <?= $label ?></h2><time datetime="<?= htmlspecialchars($next['startDate']) ?>" class="date"><?= htmlspecialchars((new DateTimeImmutable($next['startDate']))->format('l, j F Y')) ?>, 5 PM</time><strong class="timer" data-kind="start" data-date="<?= htmlspecialchars($next['startDate']) ?>" data-zone="<?= $zone ?>"></strong><a class="plain-link" href="/countdown/start-<?= $region ?>">Plain view</a></section><?php endforeach; ?>
+    <?php foreach (array('console' => 'Console', 'na' => 'NA', 'eu' => 'EU', 'asia' => 'Asia') as $region => $label): $zone = $region === 'eu' ? 'Europe/Paris' : ($region === 'asia' ? 'Asia/Seoul' : 'America/Los_Angeles'); ?><section class="countdown-card"><h2>S<?= (int)$next['number'] ?> starts: <?= $label ?></h2><time datetime="<?= htmlspecialchars($next['startDate']) ?>" class="date"><?= htmlspecialchars((new DateTimeImmutable($next['startDate']))->format('l, j F Y')) ?>, 5 PM</time><strong class="timer" data-kind="start" data-date="<?= htmlspecialchars($next['startDate']) ?>" data-zone="<?= $zone ?>"></strong><a class="plain-link" href="/countdown/start-<?= $region ?>">Plain view</a></section><?php endforeach; ?>
   </div><?php endif; ?>
 
   <?php if ($current['endDate'] === null): ?>

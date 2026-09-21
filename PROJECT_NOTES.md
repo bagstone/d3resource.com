@@ -66,10 +66,11 @@ the same `journey/data/schedule.json` and local `journey/.env` overrides as
 the Journey tracker, so announcing a date only requires the normal schedule
 or environment update. It does not need a separate source of truth.
 
-When an end date is announced, it shows a worldwide end timer. When the next
-start date is announced, it shows separate Console, NA, EU, and Asia timers;
-each launch is calculated as 5 p.m. in that region’s local timezone. The end
-timer uses the schedule entry’s `endTimeZone`. The page intentionally uses
+When an end or start date is announced, it shows separate Console, NA, EU,
+and Asia timers; each is calculated as 5 p.m. on that calendar date in the
+region’s local timezone. The end timers include a disclaimer that Blizzard's
+posts have not made clear whether endings are regional or simultaneous at the
+Americas time. The page intentionally uses
 the Journey stylesheet for the established site appearance, plus
 `countdown/countdown.css` for the centered card layout.
 
@@ -82,6 +83,10 @@ Each known timer has a minimal stream-overlay endpoint containing only that
 timer:
 
 - `/countdown/end/`
+- `/countdown/end-console/`
+- `/countdown/end-na/`
+- `/countdown/end-eu/`
+- `/countdown/end-asia/`
 - `/countdown/start-console/`
 - `/countdown/start-na/`
 - `/countdown/start-eu/`
