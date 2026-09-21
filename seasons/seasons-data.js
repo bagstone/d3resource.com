@@ -3,6 +3,7 @@
 const seasonFields = [
   { key: "startDate", label: "Start date" },
   { key: "endDate", label: "End date" },
+  { key: "endLeadTime", label: "End lead time" },
   { key: "duration", label: "Duration" },
   { key: "patch", label: "Patch" },
   { key: "theme", label: "Season theme" },
@@ -264,6 +265,7 @@ const seasons = [
     values: {
       startDate: "31 Mar 2017",
       endDate: "23 Jun 2017",
+      endLeadTime: "<a href=\"https://us.battle.net/d3/en/blog/20845156/season-10-ending-soon-6-9-2017\" target=\"_blank\">14 days</a>",
       duration: "85 days",
       patch: "<a href=\"https://us.battle.net/d3/en/blog/20635663/patch-250-now-live-3-21-2017\" target=\"_blank\">2.5.0</a>",
       theme: "-",
@@ -290,6 +292,7 @@ const seasons = [
     values: {
       startDate: "20 Jul 2017",
       endDate: "20 Oct 2017",
+      endLeadTime: "<a href=\"https://www.pcgamesn.com/diablo-iii/diablo-3-season-12\" target=\"_blank\">11 days</a>",
       duration: "92 days",
       patch: "<a href=\"https://us.battle.net/d3/en/blog/20845163/patch-260-now-live-6-27-2017\" target=\"_blank\">2.6.0</a>",
       theme: "-",
@@ -342,6 +345,7 @@ const seasons = [
     values: {
       startDate: "23 Feb 2018",
       endDate: "03 Jun 2018",
+      endLeadTime: "<a href=\"https://blizzardwatch.com/2018/05/21/diablo-3-season-13-ends-june-3-season-14-begins-june-15/\" target=\"_blank\">13 days</a>",
       duration: "100 days",
       patch: "<a href=\"https://us.battle.net/d3/en/blog/21115840/patch-261-now-live-10-24-2017\" target=\"_blank\">2.6.1</a>",
       theme: "-",
@@ -368,6 +372,7 @@ const seasons = [
     values: {
       startDate: "15 Jun 2018",
       endDate: "16 Sep 2018",
+      endLeadTime: "<a href=\"https://diablo.4fansites.de/news%2C12631%2CSeason-14-Ende-und-Season-15-Start-Termin.html\" target=\"_blank\">16 days</a>",
       duration: "93 days",
       patch: "<a href=\"https://us.battle.net/d3/en/blog/21115840/patch-261-now-live-10-24-2017\" target=\"_blank\">2.6.1</a>",
       theme: "Greed",
@@ -420,6 +425,7 @@ const seasons = [
     values: {
       startDate: "18 Jan 2019",
       endDate: "12 May 2019",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-gb/article/22976066/season-17-the-season-of-nightmares-is-now-live\" target=\"_blank\">2 days</a>",
       duration: "114 days",
       patch: "<a href=\"https://us.diablo3.com/en/blog/22863534/patch-264-now-live-1-15-2019\" target=\"_blank\">2.6.4</a>",
       theme: "Grandeur",
@@ -446,6 +452,7 @@ const seasons = [
     values: {
       startDate: "17 May 2019",
       endDate: "18 Aug 2019",
+      endLeadTime: "<a href=\"https://us.forums.blizzard.com/en/d3/t/season-17-ends-august-18-s18-begins-8-23/1088\" target=\"_blank\">16 days</a>",
       duration: "93 days",
       patch: "<a href=\"https://us.diablo3.com/en/blog/22989462/patch-265-now-live-5-14-2019\" target=\"_blank\">2.6.5</a>",
       theme: "LoN",
@@ -498,6 +505,7 @@ const seasons = [
     values: {
       startDate: "22 Nov 2019",
       endDate: "01 Mar 2020",
+      endLeadTime: "<a href=\"https://us.forums.blizzard.com/en/d3/t/season-19-ends-march-1/12756\" target=\"_blank\">16 days</a>",
       duration: "100 days",
       patch: "<a href=\"https://us.diablo3.com/en/blog/23220967/patch-267-now-live-11-12-2019\" target=\"_blank\">2.6.7</a>",
       theme: "<small>Eternal Confl.</small>",
@@ -524,6 +532,7 @@ const seasons = [
     values: {
       startDate: "13 Mar 2020",
       endDate: "21 Jun 2020",
+      endLeadTime: "<a href=\"https://us.forums.blizzard.com/en/d3/t/season-20-ends-june-21st/18056\" target=\"_blank\">13 days</a>",
       duration: "100 days",
       patch: "<a href=\"https://us.diablo3.com/en/blog/23319443/patch-268-now-live-3-3-2020\" target=\"_blank\">2.6.8</a>",
       theme: "<small>Forb. Archives</small>",
@@ -810,6 +819,7 @@ const seasons = [
     values: {
       startDate: "12 Apr 2024",
       endDate: "07 Jul 2024",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-us/article/24104599/season-32-ethereal-memory-preview\" target=\"_blank\">9 days</a>",
       duration: "86 days",
       patch: "<a href=\"https://news.blizzard.com/en-us/diablo3/24078323/season-31-season-of-the-forbidden-archives-preview\" target=\"_blank\">2.7.7</a>",
       theme: "<small>Forb. Archives</small>",
@@ -836,6 +846,7 @@ const seasons = [
     values: {
       startDate: "12 Jul 2024",
       endDate: "20 Oct 2024",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-us/article/24137819/season-33-shades-of-the-nephalem-preview\" target=\"_blank\">23 days</a>",
       duration: "100 days",
       patch: "<a href=\"https://us.diablo3.blizzard.com/en-us/blog/24104599/season-32-ethereal-memory-preview-6-28-2024\" target=\"_blank\">2.7.7</a>",
       theme: "<small>Eth. Memory</small>",
@@ -862,6 +873,7 @@ const seasons = [
     values: {
       startDate: "25 Oct 2024",
       endDate: "19 Jan 2025",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-us/article/24166297/season-34-lights-calling-preview\" target=\"_blank\">9 days</a>",
       duration: "86 days",
       patch: "<a href=\"https://news.blizzard.com/en-us/diablo3/24137819/season-33-shades-of-the-nephalem-preview\" target=\"_blank\">2.7.8</a>",
       theme: "<small>Shades o/t Neph.</small>",
@@ -888,6 +900,7 @@ const seasons = [
     values: {
       startDate: "31 Jan 2025",
       endDate: "01 Jun 2025",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-us/article/24191146/season-35-eternal-conflict-preview\" target=\"_blank\">10 days</a>",
       duration: "121 days",
       patch: "<a href=\"https://news.blizzard.com/en-us/article/24166297/season-34-lights-calling-preview\" target=\"_blank\">2.8.0</a>",
       theme: "<small>Light's Calling</small>",
@@ -940,6 +953,7 @@ const seasons = [
     values: {
       startDate: "12 Sep 2025",
       endDate: "30 Nov 2025",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-us/article/24243442/season-37-the-forbidden-archives-preview\" target=\"_blank\">9 days</a>",
       duration: "79 days",
       patch: "<a href=\"https://news.blizzard.com/en-gb/article/24231417/season-36-the-lords-of-hell-preview\" target=\"_blank\">2.8.0</a>",
       theme: "<small>Lords of Hell</small>",
@@ -1018,6 +1032,7 @@ const seasons = [
     values: {
       startDate: "26 Jun 2026",
       endDate: "27 Sep 2026",
+      endLeadTime: "<a href=\"https://news.blizzard.com/en-us/article/24301510/season-40-lights-calling-preview\" target=\"_blank\">15 days</a>",
       duration: "93 days",
       patch: "<a href=\"https://news.blizzard.com/en-gb/article/24287549/season-39-shades-of-the-nephalem-now-live\" target=\"_blank\">2.8.0</a>",
       theme: "<small>Shades o/t Neph.</small>",
