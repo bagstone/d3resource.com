@@ -68,9 +68,7 @@ or environment update. It does not need a separate source of truth.
 
 When an end or start date is announced, it shows separate Console, NA, EU,
 and Asia timers; each is calculated as 5 p.m. on that calendar date in the
-region’s local timezone. The end timers include a disclaimer that Blizzard's
-posts have not made clear whether endings are regional or simultaneous at the
-Americas time. The page intentionally uses
+region’s local timezone. The page intentionally uses
 the Journey stylesheet for the established site appearance, plus
 `countdown/countdown.css` for the centered card layout.
 

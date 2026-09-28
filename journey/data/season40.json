@@ -79,7 +79,7 @@
       },
       {
         "classes": "sjitem rift",
-        "content": "T1 Rift<br>(Level 70)"
+        "content": "T1 Rift"
       },
       {
         "classes": "sjitem rift",
@@ -143,69 +143,69 @@
     [
       {
         "classes": "sjitem kill",
-        "content": "Siegebreaker"
+        "content": "Ghom"
       },
       {
         "classes": "sjitem kill",
-        "content": "Belial<br>(Hard, level 60+)"
+        "content": "Urzael<br>(Hard, level 60+)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Skeleton King<br>(Master, level 70+)"
+        "content": "Zoltun Kulle<br>(Master, level 70+)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Urzael<br>(T2, level 70)"
+        "content": "Skeleton King<br>(T2, level 70)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Adria<br>(T7)"
+        "content": "Butcher<br>(T7)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Maghda<br>(T10)"
+        "content": "Diablo<br>(T10)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Araneae<br>(T13)"
+        "content": "Adria<br>(T13)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Azmodan (T10)<br>in under 30 sec."
+        "content": "Azmodan<br>in under 30 sec."
       },
       {
         "classes": "sjitem kill",
-        "content": "Zoltun Kulle<br>in under 10 sec."
+        "content": "Izual<br>in under 10 sec."
       }
     ],
     [
       {
         "classes": "sjitem kill",
-        "content": "Butcher"
+        "content": "Belial"
       },
       {
         "classes": "sjitem kill",
-        "content": "Cydaea<br>(Hard, level 60+)"
+        "content": "Araneae<br>(Hard, level 60+)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Ghom<br>(Master, level 70+)"
+        "content": "Rakanoth<br>(Master, level 70+)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Rakanoth<br>(T4, level 70)"
+        "content": "Cydaea<br>(T4, level 70)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Azmodan<br>(T7)"
+        "content": "Maghda<br>(T7)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Izual<br>(T10)"
+        "content": "Siegebreaker<br>(T10)"
       },
       {
         "classes": "sjitem kill",
-        "content": "Diablo<br>(T13)"
+        "content": "Malthael<br>(T13)"
       },
       {
         "classes": "sjitem kill",
@@ -341,7 +341,7 @@
       },
       {
         "classes": "sjitem setdung",
-        "content": "Complete an<br>Echoing NM"
+        "content": "Master a<br>Set Dungeon"
       },
       {
         "classes": "sjitem conquests",
@@ -462,11 +462,11 @@
       },
       {
         "classes": "rewards",
-        "content": "2<sup>nd</sup> Haedrig<br>(feet+shoulders;<br>wiz: belt+neck)"
+        "content": "2<sup>nd</sup> Haedrig<br>(feet+shoulders;<br>barb: feet+belt<br>DH: feet+ring)"
       },
       {
         "classes": "rewards",
-        "content": "3<sup>rd</sup> Haedrig,<br>Belphegor (pet),<br>portrait frame"
+        "content": "3<sup>rd</sup> Haedrig,<br>Wings of Lempo,<br>portrait frame"
       },
       {
         "classes": "rewards",
@@ -486,7 +486,7 @@
       },
       {
         "classes": "rewards",
-        "content": "Corvus pet,<br>Laurels portrait"
+        "content": "Taennin the Tiny,<br>Primal Hunter portrait"
       }
     ]
   ],
