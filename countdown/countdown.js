@@ -16,7 +16,7 @@
     var correctedOffset = offsetAt(target);
     return correctedOffset === offset ? target : guess - correctedOffset * 60000;
   }
-  function format(ms) { if (ms <= 0) return 'NOW'; var s = Math.floor(ms / 1000); return Math.floor(s / 86400) + 'd ' + String(Math.floor(s % 86400 / 3600)).padStart(2, '0') + 'h ' + String(Math.floor(s % 3600 / 60)).padStart(2, '0') + 'm ' + String(s % 60).padStart(2, '0') + 's'; }
-  function draw() { document.querySelectorAll('.timer').forEach(function (timer) { var target = localTime(timer.dataset.date, timer.dataset.zone); timer.textContent = format(target - Date.now()); }); }
+  function format(ms, kind) { if (ms <= 0) return kind === 'end' ? 'ENDED' : 'STARTED'; var s = Math.floor(ms / 1000); return Math.floor(s / 86400) + 'd ' + String(Math.floor(s % 86400 / 3600)).padStart(2, '0') + 'h ' + String(Math.floor(s % 3600 / 60)).padStart(2, '0') + 'm ' + String(s % 60).padStart(2, '0') + 's'; }
+  function draw() { document.querySelectorAll('.timer').forEach(function (timer) { var target = localTime(timer.dataset.date, timer.dataset.zone); timer.textContent = format(target - Date.now(), timer.dataset.kind); }); }
   draw(); setInterval(draw, 1000);
 }());

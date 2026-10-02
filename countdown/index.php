@@ -51,6 +51,15 @@ if ($current === null) { http_response_code(404); exit('No current Diablo 3 seas
 $next = null;
 foreach ($seasons as $season) if ($season['number'] === $current['number'] + 1) { $next = $season; break; }
 
+// Hide the season summary while regions are handing over. The first regional
+// end is Asia, while the final regional start is NA/console (used above when
+// choosing $current).
+$inRegionalHandover = false;
+if ($current['endDate'] !== null) {
+    $firstEnd = new DateTimeImmutable($current['endDate'] . ' 17:00:00', new DateTimeZone('Asia/Seoul'));
+    $inRegionalHandover = $firstEnd <= $now;
+}
+
 $age = null;
 if ($current['startDate']) $age = $today->diff(new DateTimeImmutable($current['startDate'], new DateTimeZone('UTC')))->days;
 $estimates = array();
@@ -90,8 +99,10 @@ if ($plainType !== null) {
 </head><body>
 <main>
   <h1>Diablo 3 Season Countdown</h1>
-  <p class="lead">We are in Diablo Season <?= (int)$current['number'] ?>.</p>
-  <?php if ($age !== null): ?><p>The season is <?= $age ?> day<?= $age === 1 ? '' : 's' ?> old.</p><?php endif; ?>
+  <?php if (!$inRegionalHandover): ?>
+    <p class="lead">We are in Diablo Season <?= (int)$current['number'] ?>.</p>
+    <?php if ($age !== null): ?><p>The season is <?= $age ?> day<?= $age === 1 ? '' : 's' ?> old.</p><?php endif; ?>
+  <?php endif; ?>
 
   <?php if ($current['endDate'] === null): ?>
     <p class="unknown">Season <?= (int)$current['number'] ?> end date<?= $next ? ' and Season ' . (int)$next['number'] . ' start date' : '' ?> are unknown.</p>
