@@ -36,10 +36,16 @@ foreach ($schedule as $number => $entry) {
 }
 usort($seasons, function ($a, $b) { return $a['number'] <=> $b['number']; });
 
-$today = new DateTimeImmutable('today', new DateTimeZone('UTC'));
+$utc = new DateTimeZone('UTC');
+$now = new DateTimeImmutable('now', $utc);
+$today = new DateTimeImmutable('today', $utc);
 $current = null;
 foreach ($seasons as $season) {
-    if ($season['startDate'] !== null && $season['startDate'] <= $today->format('Y-m-d')) $current = $season;
+    if ($season['startDate'] === null) continue;
+    // A season is not current merely because its launch date has begun in
+    // Asia. NA/console is the final regional launch, at 5 PM Pacific time.
+    $launch = new DateTimeImmutable($season['startDate'] . ' 17:00:00', new DateTimeZone('America/Los_Angeles'));
+    if ($launch <= $now) $current = $season;
 }
 if ($current === null) { http_response_code(404); exit('No current Diablo 3 season is scheduled yet.'); }
 $next = null;
